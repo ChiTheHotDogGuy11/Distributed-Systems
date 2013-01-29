@@ -1,10 +1,12 @@
 public class Queue {
 	private Node first, last;
-
+	private int numElems;
+	
 	public Queue(MigratableProcess mp) {
 		Node newNode = new Node(mp);
 		first = newNode;
 		last = newNode;
+		numElems = 0;
 	}
 	
 	private class Node {
@@ -21,6 +23,7 @@ public class Queue {
 		if (!isEmpty()) {
 			MigratableProcess result = first.value;
 			first = first.next;
+			numElems -= 1;
 			return result;
 		}
 		else throw new IllegalStateException("Can't dequeue from an empty queue.");
@@ -30,9 +33,14 @@ public class Queue {
 		Node newNode = new Node(mp);
 		last.next = newNode;
 		last = newNode;
+		numElems += 1;
 	}
 	
 	public boolean isEmpty() {
-		return first == last;
+		return (numElems == 0);
+	}
+	
+	public int size() {
+		return numElems;
 	}
 }
