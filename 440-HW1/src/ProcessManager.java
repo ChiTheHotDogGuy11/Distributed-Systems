@@ -24,13 +24,13 @@ public class ProcessManager {
         return fileName;
 	}
 	
-	public void runProcess(String[] command) {
+	public void runProcess(String command, String[] args) {
 		Class<?> processClass = null;
 		Constructor<?> processCtr = null;
 		Thread t = null;
 		
 		try {
-			processClass = Class.forName(command[0]);
+			processClass = Class.forName(command);
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
@@ -44,7 +44,7 @@ public class ProcessManager {
 		}
 		
 		try {
-			t = new Thread((Runnable) processCtr.newInstance());
+			t = new Thread((MigratableProcess) processCtr.newInstance(args));
 		} catch (IllegalArgumentException e) {
 			e.printStackTrace();
 		} catch (InstantiationException e) {
@@ -55,7 +55,6 @@ public class ProcessManager {
 			e.printStackTrace();
 		}
 		
-		t.run();
 	}
 	
 	public void addProcess(String newProcess) {
