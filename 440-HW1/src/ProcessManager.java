@@ -1,6 +1,8 @@
+import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.ObjectOutputStream;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -57,18 +59,13 @@ public class ProcessManager {
 	}
 	
 	public void receiveCommands() throws IOException {
-		byte[] buffer = new byte[256];
-		char[] string = new char[256];
+		String result = "";
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		while(true) {
-			buffer = new byte[256];
 			System.out.print("==> ");
-			System.in.read(buffer);
-			for (int i = 0; i < buffer.length; i++) {
-				string[i] = (char)buffer[i];
-			}
-			System.out.print("\n"+ String.valueOf(string) + "\n");
-			parseCommand(buffer.toString());
+			result = br.readLine();
+			parseCommand(result);
 		}
 	}
 	
@@ -81,12 +78,12 @@ public class ProcessManager {
 			args[i-1] = words[i];
 		}
 		
-		if (com == "-c" && args.length == 1) {
+		if (com.equals("-c") && args.length == 1) {
 			
-		} else if (com == "ps" && words.length == 1) {
+		} else if (com.equals("ps") && words.length == 1) {
 			
-		} else if (com == "quit" && words.length == 1) {
-			
+		} else if (com.equals("quit") && words.length == 1) {
+			System.out.println("Success!");
 		} else {
 			//runProcess(com, args);
 		}
