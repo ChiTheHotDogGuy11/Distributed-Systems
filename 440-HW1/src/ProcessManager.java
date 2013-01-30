@@ -1,12 +1,11 @@
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.ObjectOutputStream;
+import java.lang.Class;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
-import java.util.ArrayList;
 
 public class ProcessManager {
 	
@@ -39,7 +38,7 @@ public class ProcessManager {
 		}
 		
 		try {
-			processCtr = processClass.getConstructor();
+			processCtr = processClass.getConstructor(String[].class);
 		} catch (SecurityException e) {
 			e.printStackTrace();
 		} catch (NoSuchMethodException e) {
@@ -47,8 +46,11 @@ public class ProcessManager {
 		}
 		
 		try {
-			t = new Thread((MigratableProcess) processCtr.newInstance(args));
+			Object[] initArgs = new Object[1];
+			initArgs[0] = args;
+			t = new Thread((MigratableProcess) processCtr.newInstance(initArgs));
 		} catch (IllegalArgumentException e) {
+			
 			e.printStackTrace();
 		} catch (InstantiationException e) {
 			e.printStackTrace();
