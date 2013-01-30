@@ -34,7 +34,8 @@ public class ProcessManager {
 		try {
 			processClass = Class.forName(command);
 		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
+			System.out.println(command + " not found");
+			return;
 		}
 		
 		try {
@@ -79,13 +80,13 @@ public class ProcessManager {
 		}
 		
 		if (com.equals("-c") && args.length == 1) {
-			
+			System.out.println("-c Success at hostname: " + args[0]);
 		} else if (com.equals("ps") && words.length == 1) {
-			
+			System.out.println("ps Success!");
 		} else if (com.equals("quit") && words.length == 1) {
-			System.out.println("Success!");
+			System.out.println("quit Success!");
 		} else {
-			//runProcess(com, args);
+			runProcess(com, args);
 		}
 	}
 	
