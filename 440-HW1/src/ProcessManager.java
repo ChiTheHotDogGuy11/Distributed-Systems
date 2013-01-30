@@ -4,8 +4,7 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
-
-
+import java.util.ArrayList;
 
 public class ProcessManager {
 	
@@ -53,7 +52,46 @@ public class ProcessManager {
 			e.printStackTrace();
 		} catch (InvocationTargetException e) {
 			e.printStackTrace();
+		}	
+	}
+	
+	public void receiveCommands() throws IOException {
+		int b;
+		int i = 0;
+		char[] buffer = new char[256];
+		
+		while(true) {
+			i = 0;
+			buffer = new char[256];
+			System.out.print("==> ");
+			while((b = System.in.read()) != 0x0a) {
+				if (b != 0x00) {
+					buffer[i++] = (char)b;
+				}
+			}
+			parseCommand(buffer.toString());
 		}
+	}
+	
+	public void parseCommand(String command) {
+		String[] words = command.split(" ");
+		String com = words[0];
+		String[] args = new String[words.length - 1];
+		
+		for (int i = 1; i < words.length; i++) {
+			args[i-1] = words[i];
+		}
+		
+		if (com == "ps" && words.length == 1) {
+			
+		} else if (com == "quit" && words.length == 1) {
+			
+		} else {
+			runProcess(com, args);
+		}
+	}
+	
+	public void printProcesses() {
 		
 	}
 	
