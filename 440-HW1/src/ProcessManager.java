@@ -10,6 +10,7 @@ public class ProcessManager {
 	
 	private Queue processes;
 	private int numProcesses;
+	private boolean isMaster = true;
 	
 	public String migrate() throws IOException {
 		MigratableProcess pToMigrate = processes.dequeue();
@@ -56,19 +57,17 @@ public class ProcessManager {
 	}
 	
 	public void receiveCommands() throws IOException {
-		int b;
-		int i = 0;
-		char[] buffer = new char[256];
+		byte[] buffer = new byte[256];
+		char[] string = new char[256];
 		
 		while(true) {
-			i = 0;
-			buffer = new char[256];
+			buffer = new byte[256];
 			System.out.print("==> ");
-			while((b = System.in.read()) != 0x0a) {
-				if (b != 0x00) {
-					buffer[i++] = (char)b;
-				}
+			System.in.read(buffer);
+			for (int i = 0; i < buffer.length; i++) {
+				string[i] = (char)buffer[i];
 			}
+			System.out.print("\n"+ String.valueOf(string) + "\n");
 			parseCommand(buffer.toString());
 		}
 	}
@@ -82,20 +81,17 @@ public class ProcessManager {
 			args[i-1] = words[i];
 		}
 		
-		if (com == "ps" && words.length == 1) {
+		if (com == "-c" && args.length == 1) {
+			
+		} else if (com == "ps" && words.length == 1) {
 			
 		} else if (com == "quit" && words.length == 1) {
 			
 		} else {
-			runProcess(com, args);
+			//runProcess(com, args);
 		}
 	}
 	
-	public void printProcesses() {
-		
-	}
-	
 	public void addProcess(String newProcess) {
-		processes.enqueue(newProcess);
 	}
 }
