@@ -6,6 +6,8 @@ import java.io.ObjectOutputStream;
 import java.lang.Class;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
+import java.net.Socket;
+import java.net.UnknownHostException;
 
 public class ProcessManager {
 	
@@ -82,7 +84,7 @@ public class ProcessManager {
 		}
 		
 		if (com.equals("-c") && args.length == 1) {
-			System.out.println("-c Success at hostname: " + args[0]);
+			connectAssSlave(args[0]);
 		} else if (com.equals("ps") && words.length == 1) {
 			System.out.println("ps Success!");
 		} else if (com.equals("quit") && words.length == 1) {
@@ -93,5 +95,37 @@ public class ProcessManager {
 	}
 	
 	public void addProcess(Thread newProcess) {
+	}
+	
+	public Socket connectAssSlave(String hostname) {
+		String[] hostArray = hostname.split(":");
+		
+		if (hostArray.length != 2) {
+			try {
+				throw new Exception("Invalide Hostname!");
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		
+		String host = hostArray[0];
+		int port = Integer.parseInt(hostArray[1]);
+		Socket sck = null;
+		
+		try {
+			sck = new Socket(host, port);
+		} catch (UnknownHostException e) {
+			System.out.println("Unknown host. Could not connect to " + host + ".");
+			return null;
+		} catch (IOException e) {
+			e.printStackTrace();
+			return null;
+		}
+		
+		if (sck != null) {
+			isMaster = false;
+		}
+		
+		return sck;
 	}
 }
