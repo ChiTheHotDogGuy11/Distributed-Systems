@@ -25,7 +25,7 @@ public class ProcessManager {
         return fileName;
 	}
 	
-	public void runProcess(String command, String[] args) {
+	public void acceptProcess(String command, String[] args) {
 		Class<?> processClass = null;
 		Constructor<?> processCtr = null;
 		Thread t = null;
@@ -49,8 +49,8 @@ public class ProcessManager {
 			Object[] initArgs = new Object[1];
 			initArgs[0] = args;
 			t = new Thread((MigratableProcess) processCtr.newInstance(initArgs));
+			addProcess(t);
 		} catch (IllegalArgumentException e) {
-			
 			e.printStackTrace();
 		} catch (InstantiationException e) {
 			e.printStackTrace();
@@ -58,7 +58,7 @@ public class ProcessManager {
 			e.printStackTrace();
 		} catch (InvocationTargetException e) {
 			e.printStackTrace();
-		}	
+		}
 	}
 	
 	public void receiveCommands() throws IOException {
@@ -88,10 +88,10 @@ public class ProcessManager {
 		} else if (com.equals("quit") && words.length == 1) {
 			System.out.println("quit Success!");
 		} else {
-			runProcess(com, args);
+			acceptProcess(com, args);
 		}
 	}
 	
-	public void addProcess(String newProcess) {
+	public void addProcess(Thread newProcess) {
 	}
 }
