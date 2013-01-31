@@ -9,8 +9,8 @@ import java.lang.reflect.InvocationTargetException;
 
 public class ProcessManager {
 	
-	private Queue processes;
-	private int numProcesses;
+	private Queue<ProcessManager> childProcessManagers;
+	private Queue<MigratableProcess> processes;
 	private boolean isMaster = true;
 	
 	public String migrate() throws IOException {

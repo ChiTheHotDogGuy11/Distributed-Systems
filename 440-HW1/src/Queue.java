@@ -1,27 +1,27 @@
-public class Queue {
-	private Node first, last;
+public class Queue <F> {
+	private Node<F> first, last;
 	private int numElems;
 	
-	public Queue(MigratableProcess mp) {
-		Node newNode = new Node(mp);
+	public Queue(F mp) {
+		Node<F> newNode = new Node<F>(mp);
 		first = newNode;
 		last = newNode;
 		numElems = 0;
 	}
 	
-	private class Node {
-		private MigratableProcess value;
-		private Node next;
+	private class Node <E>{
+		private E value;
+		private Node<E> next;
 		
-		public Node(MigratableProcess mp) {
+		public Node(E mp) {
 			value = mp;
 			next = null;
 		}
 	}
 	
-	public MigratableProcess dequeue() {
+	public F dequeue() {
 		if (!isEmpty()) {
-			MigratableProcess result = first.value;
+			F result = first.value;
 			first = first.next;
 			numElems -= 1;
 			return result;
@@ -29,8 +29,8 @@ public class Queue {
 		else throw new IllegalStateException("Can't dequeue from an empty queue.");
 	}
 	
-	public void enqueue(MigratableProcess mp) {
-		Node newNode = new Node(mp);
+	public void enqueue(F mp) {
+		Node<F> newNode = new Node<F>(mp);
 		last.next = newNode;
 		last = newNode;
 		numElems += 1;
