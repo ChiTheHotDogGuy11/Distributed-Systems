@@ -5,10 +5,9 @@ public class Main {
 
 	/**
 	 * @param args
-	 * @throws IOException 
-	 * @throws InterruptedException 
+	 * @throws Exception 
 	 */
-	public static void main(String[] args) throws IOException, InterruptedException {
+	public static void main(String[] args) throws Exception {
 		ProcessManager pm = new ProcessManager();
 		pm.receiveCommands();
 	}

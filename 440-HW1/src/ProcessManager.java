@@ -6,7 +6,6 @@ import java.io.ObjectOutputStream;
 import java.lang.Class;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
-import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
@@ -15,6 +14,9 @@ public class ProcessManager {
 	private Queue<ProcessManager> childProcessManagers;
 	private Queue<Thread> threads = new Queue<Thread>(null);
 	private boolean isMaster = true;
+	private boolean isRunning = true;
+	private Socket sck = null;
+	private ServerSocketWrapper server = null;
 	
 	@SuppressWarnings("deprecation")
 	public String migrate() throws IOException {
@@ -66,16 +68,18 @@ public class ProcessManager {
 		return t;
 	}
 	
-	public void receiveCommands() throws IOException, InterruptedException {
+	public void receiveCommands() throws Exception {
 		String result = "";
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		Thread serverThread = new Thread(new ThreadableServerSocket(2004, 10));
-		serverThread.start();
+		server = new ServerSocketWrapper(2004, 10);
+		server.start();
 		
-		while(true) {
-			System.out.print("==> ");
-			result = br.readLine();
-			parseCommand(result);
+		while(isRunning) {
+			while(isMaster) {
+				System.out.print("==> ");
+				result = br.readLine();
+				parseCommand(result);
+			}
 		}
 	}
 	
@@ -94,7 +98,7 @@ public class ProcessManager {
 		} else if (com.equals("ps") && words.length == 1) {
 			System.out.println("ps Success!");
 		} else if (com.equals("quit") && words.length == 1) {
-			System.out.println("quit Success!");
+			quitPM();
 		} else {
 			if((t = acceptProcess(com, args)) != null) {
 				t.setName(command);
@@ -104,8 +108,8 @@ public class ProcessManager {
 	}
 	
 	public void addProcess(Thread newProcess) {
-		System.out.println(newProcess == null);
 		threads.enqueue(newProcess);
+		
 		try {
 			newProcess.join();
 		} catch (InterruptedException e) {
@@ -115,7 +119,7 @@ public class ProcessManager {
 		newProcess.start();
 	}
 	
-	public Socket connectAssSlave(String hostname) {
+	public void connectAssSlave(String hostname) {
 		String[] hostArray = hostname.split(":");
 		
 		if (hostArray.length != 2) {
@@ -128,22 +132,32 @@ public class ProcessManager {
 		
 		String host = hostArray[0];
 		int port = Integer.parseInt(hostArray[1]);
-		Socket sck = null;
 		
 		try {
 			sck = new Socket(host, port);
 		} catch (UnknownHostException e) {
 			System.out.println("Unknown host. Could not connect to " + host + ".");
-			return null;
+			return;
 		} catch (IOException e) {
 			e.printStackTrace();
-			return null;
+			return;
 		}
 		
 		if (sck != null) {
 			isMaster = false;
 		}
-		
-		return sck;
+	}
+	
+	public void quitPM() {
+		if (sck != null) {
+			try {
+				sck.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		isMaster = false;
+		isRunning = false;
+		server.stop();
 	}
 }
