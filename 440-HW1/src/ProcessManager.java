@@ -13,7 +13,7 @@ import java.net.UnknownHostException;
 public class ProcessManager {
 	
 	private Queue<ProcessManager> childProcessManagers;
-	private Queue<Thread> threads;
+	private Queue<Thread> threads = new Queue<Thread>(null);
 	private boolean isMaster = true;
 	
 	@SuppressWarnings("deprecation")
@@ -29,7 +29,7 @@ public class ProcessManager {
         return fileName;
 	}
 	
-	public void acceptProcess(String command, String[] args) {
+	public Thread acceptProcess(String command, String[] args) {
 		Class<?> processClass = null;
 		Constructor<?> processCtr = null;
 		Thread t = null;
@@ -38,7 +38,7 @@ public class ProcessManager {
 			processClass = Class.forName(command);
 		} catch (ClassNotFoundException e) {
 			System.out.println(command + " not found");
-			return;
+			return null;
 		}
 		
 		try {
@@ -53,7 +53,6 @@ public class ProcessManager {
 			Object[] initArgs = new Object[1];
 			initArgs[0] = args;
 			t = new Thread((MigratableProcess) processCtr.newInstance(initArgs));
-			addProcess(t);
 		} catch (IllegalArgumentException e) {
 			e.printStackTrace();
 		} catch (InstantiationException e) {
@@ -63,6 +62,8 @@ public class ProcessManager {
 		} catch (InvocationTargetException e) {
 			e.printStackTrace();
 		}
+		
+		return t;
 	}
 	
 	public void receiveCommands() throws IOException, InterruptedException {
@@ -82,6 +83,7 @@ public class ProcessManager {
 		String[] words = command.split(" ");
 		String com = words[0];
 		String[] args = new String[words.length - 1];
+		Thread t = null;
 		
 		for (int i = 1; i < words.length; i++) {
 			args[i-1] = words[i];
@@ -94,11 +96,15 @@ public class ProcessManager {
 		} else if (com.equals("quit") && words.length == 1) {
 			System.out.println("quit Success!");
 		} else {
-			acceptProcess(com, args);
+			if((t = acceptProcess(com, args)) != null) {
+				t.setName(command);
+				addProcess(t);
+			}
 		}
 	}
 	
 	public void addProcess(Thread newProcess) {
+		System.out.println(newProcess == null);
 		threads.enqueue(newProcess);
 		try {
 			newProcess.join();
@@ -106,7 +112,7 @@ public class ProcessManager {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		newProcess.run();
+		newProcess.start();
 	}
 	
 	public Socket connectAssSlave(String hostname) {
