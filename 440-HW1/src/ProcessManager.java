@@ -29,8 +29,6 @@ public class ProcessManager {
         return fileName;
 	}
 	
-	
-	
 	public void acceptProcess(String command, String[] args) {
 		Class<?> processClass = null;
 		Constructor<?> processCtr = null;
@@ -108,7 +106,7 @@ public class ProcessManager {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		newProcess.start();
+		newProcess.run();
 	}
 	
 	public Socket connectAssSlave(String hostname) {

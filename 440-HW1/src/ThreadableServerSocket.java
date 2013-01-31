@@ -1,5 +1,6 @@
 import java.io.IOException;
 import java.net.ServerSocket;
+import java.net.Socket;
 
 public class ThreadableServerSocket implements Runnable{
 
@@ -11,8 +12,12 @@ public class ThreadableServerSocket implements Runnable{
 	
 	@Override
 	public void run() {
+		Socket conn = null;
 		try {
-			ss.accept();
+			while(true) {
+				conn = ss.accept();
+				System.out.println(conn.getInetAddress());
+			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
