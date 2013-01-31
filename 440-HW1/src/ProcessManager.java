@@ -6,6 +6,7 @@ import java.io.ObjectOutputStream;
 import java.lang.Class;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
+import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
@@ -14,6 +15,7 @@ public class ProcessManager {
 	private Queue<ProcessManager> childProcessManagers;
 	private Queue<Thread> threads;
 	private boolean isMaster = true;
+	private ServerSocket ss;
 	
 	@SuppressWarnings("deprecation")
 	public String migrate() throws IOException {
@@ -67,6 +69,7 @@ public class ProcessManager {
 	public void receiveCommands() throws IOException {
 		String result = "";
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		ss = new ServerSocket(2004, 10);
 		
 		while(true) {
 			System.out.print("==> ");
