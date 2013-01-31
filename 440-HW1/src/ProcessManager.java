@@ -12,16 +12,17 @@ import java.net.UnknownHostException;
 public class ProcessManager {
 	
 	private Queue<ProcessManager> childProcessManagers;
-	private Queue<MigratableProcess> processes;
+	private Queue<Thread> threads;
 	private boolean isMaster = true;
 	
+	@SuppressWarnings("deprecation")
 	public String migrate() throws IOException {
-		MigratableProcess pToMigrate = processes.dequeue();
-		pToMigrate.suspend();
+		Thread threadToMigrate = threads.dequeue();
+		threadToMigrate.suspend();
 		String fileName = "hmmKay";
         FileOutputStream fileOut = new FileOutputStream(fileName);
         ObjectOutputStream out = new ObjectOutputStream(fileOut);
-        out.writeObject(pToMigrate);
+        out.writeObject(threadToMigrate);
         out.close();
         fileOut.close();
         return fileName;
@@ -95,6 +96,14 @@ public class ProcessManager {
 	}
 	
 	public void addProcess(Thread newProcess) {
+		threads.enqueue(newProcess);
+		try {
+			newProcess.join();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		newProcess.run();
 	}
 	
 	public Socket connectAssSlave(String hostname) {
