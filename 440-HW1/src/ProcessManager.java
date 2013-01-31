@@ -15,7 +15,6 @@ public class ProcessManager {
 	private Queue<ProcessManager> childProcessManagers;
 	private Queue<Thread> threads;
 	private boolean isMaster = true;
-	private ServerSocket ss;
 	
 	@SuppressWarnings("deprecation")
 	public String migrate() throws IOException {
@@ -66,10 +65,11 @@ public class ProcessManager {
 		}
 	}
 	
-	public void receiveCommands() throws IOException {
+	public void receiveCommands() throws IOException, InterruptedException {
 		String result = "";
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		ss = new ServerSocket(2004, 10);
+		Thread serverThread = new Thread(new ThreadableServerSocket(2004, 10));
+		serverThread.start();
 		
 		while(true) {
 			System.out.print("==> ");
