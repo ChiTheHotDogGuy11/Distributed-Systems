@@ -10,15 +10,10 @@ public class Main {
 		pm.receiveCommands();
 		/*String[] args2 = new String[2];
 		args2[0] = "http://www.google.com";
-		args2[1] = "silly.txt";
+		args2[1] = "src\\weby.txt";
 		WebCrawler heyThere = new WebCrawler(args2);
 		Thread t = new Thread((Runnable)heyThere);
-		t.start();
-		Thread.sleep(1000);
-		heyThere.suspend();
-		Thread.sleep(1000);
-		t.run();*/
-
+		t.start();*/
 	}
 
 }

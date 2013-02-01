@@ -45,7 +45,6 @@ public class SlaveListener {
 							out = new PrintWriter(sck.getOutputStream(), true);
 							in = new BufferedReader(new InputStreamReader(sck.getInputStream()));
 							request = in.readLine();
-							System.out.print(request);
 						} catch (IOException e) {
 							e.printStackTrace();
 						}

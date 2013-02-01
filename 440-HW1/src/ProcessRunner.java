@@ -42,8 +42,10 @@ public class ProcessRunner {
 				while(running) {
 					if (threads.size() > 0) {
 						Thread cur = threads.get(0);
+						//if (cur != null) cur.start();
 						cur.start();
 						try {
+							//if (cur != null) cur.join();
 							cur.join();
 						} catch (InterruptedException e) {
 							e.printStackTrace();
