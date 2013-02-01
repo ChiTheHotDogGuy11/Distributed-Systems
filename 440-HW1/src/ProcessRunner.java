@@ -111,4 +111,8 @@ public class ProcessRunner {
 		threads.get(threads.size() - 1).suspend();
 		return threads.remove(threads.size() - 1);
 	}
+	
+	public synchronized int getSize() {
+		return threads.size();
+	}
 }
