@@ -16,7 +16,7 @@ public class ProcessRunner {
 	private Thread thread;
 	
 	//List of threads being managed by the ProcessManager
-	private ArrayList<Thread> threads = new ArrayList<Thread>();
+	private ArrayList<MigratableProcessWrapper> processes = new ArrayList<MigratableProcessWrapper>();
 	
 	/** start()
 	 * 
@@ -40,18 +40,16 @@ public class ProcessRunner {
 			public void run() {
 				running = true;
 				while(running) {
-					if (threads.size() > 0) {
-						Thread cur = threads.get(0);
-						//if (cur != null) cur.start();
-						cur.start();
+					if (processes.size() > 0) {
+						MigratableProcessWrapper cur = processes.get(0);
 						try {
-							//if (cur != null) cur.join();
-							cur.join();
-						} catch (InterruptedException e) {
-							e.printStackTrace();
+							cur.start();
+							cur.getThread().join();
+						} catch (Exception e1) {
+							e1.printStackTrace();
 						}
 						System.out.println(cur.getName() + " has terminated");
-						threads.remove(0);
+						processes.remove(0);
 					}
 				}
 			}
@@ -65,8 +63,8 @@ public class ProcessRunner {
 	 * Stops the ProcessRunner by setting the running boolean to false
 	 */
 	public synchronized void stop() {
-		for (int i = 0; i < threads.size(); i++) {
-			threads.get(i).interrupt();
+		for (int i = 0; i < processes.size(); i++) {
+			processes.get(i).stop();
 		}
 		
 		running = false;
@@ -78,8 +76,8 @@ public class ProcessRunner {
 	 * Adds a thread to the list being managed by the ProcessRunner
 	 * @param t - Thread to be added to the list
 	 */
-	public synchronized void addThread(Thread t) {
-		threads.add(t);
+	public synchronized void addThread(MigratableProcessWrapper t) {
+		processes.add(t);
 	}
 	
 	/** printProcesses()
@@ -88,13 +86,13 @@ public class ProcessRunner {
 	 * Called as a result of a ps command to a ProcessManager
 	 */
 	public synchronized void printProcesses() {
-		if (threads.size() == 0) {
+		if (processes.size() == 0) {
 			System.out.println("No processes running.");
 			return;
 		}
 		
-		for (int i = 0; i < threads.size(); i++) {
-			Thread cur = threads.get(i);
+		for (int i = 0; i < processes.size(); i++) {
+			MigratableProcessWrapper cur = processes.get(i);
 			System.out.println(cur.getName());
 		}
 	}
@@ -105,16 +103,16 @@ public class ProcessRunner {
 	 * @return the last Thread in the list being managed by the ProcessRunner
 	 */
 	@SuppressWarnings("deprecation")
-	public synchronized Thread getLast() {
-		if (threads.size() == 0) {
+	public synchronized MigratableProcessWrapper getLast() {
+		if (processes.size() == 0) {
 			return null;
 		} 
 		
-		threads.get(threads.size() - 1).suspend();
-		return threads.remove(threads.size() - 1);
+		processes.get(processes.size() - 1).stop();
+		return processes.remove(processes.size() - 1);
 	}
 	
 	public synchronized int getSize() {
-		return threads.size();
+		return processes.size();
 	}
 }

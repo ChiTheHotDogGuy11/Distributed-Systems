@@ -20,16 +20,16 @@ public class ProcessManager {
 	private SlaveListener sl = null;
 	
 	public void migrate() throws IOException {
-		Thread threadToMigrate = pr.getLast();
+		MigratableProcessWrapper processToMigrate = pr.getLast();
         ObjectOutputStream out = new ObjectOutputStream(sck.getOutputStream());
-        out.writeObject(threadToMigrate);
+        out.writeObject(processToMigrate);
         out.close();
 	}
 	
-	public Thread acceptProcess(String command, String[] args) {
+	public MigratableProcessWrapper acceptProcess(String command, String[] args) {
 		Class<?> processClass = null;
 		Constructor<?> processCtr = null;
-		Thread t = null;
+		MigratableProcessWrapper mpw = null;
 		
 		try {
 			processClass = Class.forName(command);
@@ -49,7 +49,7 @@ public class ProcessManager {
 		try {
 			Object[] initArgs = new Object[1];
 			initArgs[0] = args;
-			t = new Thread((MigratableProcess) processCtr.newInstance(initArgs));
+			mpw = new MigratableProcessWrapper((MigratableProcess) processCtr.newInstance(initArgs));
 		} catch (IllegalArgumentException e) {
 			e.printStackTrace();
 		} catch (InstantiationException e) {
@@ -60,7 +60,7 @@ public class ProcessManager {
 			e.printStackTrace();
 		}
 		
-		return t;
+		return mpw;
 	}
 	
 	public void receiveCommands() throws Exception {
@@ -83,7 +83,7 @@ public class ProcessManager {
 		String[] words = command.split(" ");
 		String com = words[0];
 		String[] args = new String[words.length - 1];
-		Thread t = null;
+		MigratableProcessWrapper mpw = null;
 		
 		for (int i = 1; i < words.length; i++) {
 			args[i-1] = words[i];
@@ -100,14 +100,14 @@ public class ProcessManager {
 		} else if (com.equals("quit") && words.length == 1) {
 			quitPM();
 		} else {
-			if((t = acceptProcess(com, args)) != null) {
-				t.setName(command);
-				addProcess(t);
+			if((mpw = acceptProcess(com, args)) != null) {
+				mpw.setName(command);
+				addProcess(mpw);
 			}
 		}
 	}
 	
-	public void addProcess(Thread newProcess) {
+	public void addProcess(MigratableProcessWrapper newProcess) {
 		pr.addThread(newProcess);
 	}
 	

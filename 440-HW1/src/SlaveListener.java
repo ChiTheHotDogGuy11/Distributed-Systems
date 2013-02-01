@@ -52,12 +52,14 @@ public class SlaveListener {
 						if (request.equals("NumProcesses?")) {
 							out.println(pm.getNumProcesses());
 						} else if (request.equals("incoming")) {
-							Thread newProcess = null;
+							MigratableProcess newProcess = null;
+							MigratableProcessWrapper mpw = null;
 							try {
 								oin = new ObjectInputStream(sck.getInputStream());
-								newProcess = (Thread) oin.readObject();
+								newProcess = (MigratableProcess) oin.readObject();
 								oin.close();
-								pm.addProcess(newProcess);
+								mpw = new MigratableProcessWrapper(newProcess);
+								pm.addProcess(mpw);
 							} catch (IOException e) {
 								e.printStackTrace();
 							} catch (ClassNotFoundException e) {

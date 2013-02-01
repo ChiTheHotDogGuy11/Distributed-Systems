@@ -39,7 +39,7 @@ public class TransactionalFileInputStream extends InputStream implements Seriali
 		try {
 			fis = new FileInputStream(src);
 		} catch (FileNotFoundException e1) {
-			e1.printStackTrace();
+			return -1;
 		}
 	    int result = -1;
 		try {
