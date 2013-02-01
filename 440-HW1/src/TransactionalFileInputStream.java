@@ -9,6 +9,7 @@ import java.io.InputStream;
  * Class designed to safely read from file across distributed system
  * @author Tyler Healy (thealy)
  */
+@SuppressWarnings("serial")
 public class TransactionalFileInputStream extends InputStream implements Serializable {
 
 	private int byteCounter;

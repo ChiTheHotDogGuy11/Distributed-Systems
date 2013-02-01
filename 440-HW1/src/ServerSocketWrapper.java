@@ -1,7 +1,6 @@
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.sql.Connection;
 import java.util.ArrayList;
 
 /** ServerSocketWrapper
@@ -55,11 +54,11 @@ public class ServerSocketWrapper {
 		
 		server = new ServerSocket(port, backlog);
 		thread = new Thread(new Runnable() {
-			@Override
 			/** run()
 			 * 
 			 * Accepts connections and adds it to the managed list
 			 */
+			@Override
 			public void run() {
 				running = true;
 				while(running) {

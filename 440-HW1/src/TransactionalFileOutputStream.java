@@ -8,6 +8,7 @@ import java.io.Serializable;
  * Class designed to safely write to file across a distributed system
  * @author Tyler Healy (thealy)
  */
+@SuppressWarnings("serial")
 public class TransactionalFileOutputStream extends OutputStream implements Serializable {
 	
 	private String src;

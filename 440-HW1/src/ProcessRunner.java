@@ -102,6 +102,7 @@ public class ProcessRunner {
 	 * Returns a Thread to be migrated
 	 * @return the last Thread in the list being managed by the ProcessRunner
 	 */
+	@SuppressWarnings("deprecation")
 	public synchronized Thread getLast() {
 		if (threads.size() == 0) {
 			return null;
