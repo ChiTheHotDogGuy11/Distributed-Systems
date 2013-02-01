@@ -6,6 +6,8 @@ public class MigratableProcessWrapper {
     
     private MigratableProcess mp;
     
+    private String name;
+    
     public MigratableProcessWrapper(MigratableProcess mp) {
     	this.mp = mp;
     }
@@ -28,4 +30,20 @@ public class MigratableProcessWrapper {
 		mp.suspend();
 		thread = null;
 	}
+    
+    public synchronized Thread getThread() {
+    	return thread;
+    }
+    
+    public synchronized MigratableProcess getProcess() {
+    	return mp;
+    }
+    
+    public synchronized String getName() {
+    	return name;
+    }
+    
+    public synchronized void setName(String name) {
+    	this.name = name;
+    }
 }
