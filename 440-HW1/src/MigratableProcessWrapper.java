@@ -8,6 +8,8 @@ public class MigratableProcessWrapper {
     
     private String name;
     
+    private volatile boolean hasStarted = false;
+    
     public MigratableProcessWrapper(MigratableProcess mp) {
     	this.mp = mp;
     }
@@ -19,7 +21,12 @@ public class MigratableProcessWrapper {
 		
 		thread = new Thread(mp);
 		
-		thread.start();
+		if (hasStarted == false) {
+			thread.start();
+			hasStarted = true;
+		} else {
+			mp.run();
+		}
 	}
     
     public synchronized void stop() {

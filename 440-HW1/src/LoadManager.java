@@ -69,7 +69,7 @@ public class LoadManager {
 							sum += numProcesses[i];
 						}
 						int avg = ((sum - 1) / numProcesses.length) + 1;
-						ArrayList<Thread> migrations = new ArrayList<Thread>();
+						ArrayList<MigratableProcess> migrations = new ArrayList<MigratableProcess>();
 						for (int i = 0; i < connections.size(); i++) {
 							Socket cur = connections.get(i);
 							if (!cur.isClosed()) {
@@ -79,10 +79,10 @@ public class LoadManager {
 								}
 								for(int j = 1; j <= over; j++) {
 									ObjectInputStream oin;
-									Thread obj = null;
+									MigratableProcess obj = null;
 									try {
 										oin = new ObjectInputStream(cur.getInputStream());
-										obj = (Thread) oin.readObject();
+										obj = (MigratableProcess) oin.readObject();
 										oin.close();
 									} catch (IOException e) {
 										e.printStackTrace();
@@ -114,14 +114,11 @@ public class LoadManager {
 							
 							if (!cur.isClosed()) {
 								try {
-									out = new PrintWriter(cur.getOutputStream());
 									ob_out = new ObjectOutputStream(cur.getOutputStream());
 									
 									out.println("incoming");
-									Thread.sleep(50);
+									Thread.sleep(500);
 									ob_out.writeObject(migrations.get(i));
-									
-									ob_out.close();
 								} catch (IOException e) {
 									e.printStackTrace();
 								} catch (InterruptedException e) {

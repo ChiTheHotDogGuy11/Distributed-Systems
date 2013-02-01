@@ -22,7 +22,7 @@ public class ProcessManager {
 	public void migrate() throws IOException {
 		MigratableProcessWrapper processToMigrate = pr.getLast();
         ObjectOutputStream out = new ObjectOutputStream(sck.getOutputStream());
-        out.writeObject(processToMigrate);
+        out.writeObject(processToMigrate.getProcess());
         out.close();
 	}
 	
