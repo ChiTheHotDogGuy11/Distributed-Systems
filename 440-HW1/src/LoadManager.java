@@ -115,13 +115,8 @@ public class LoadManager {
 							if (!cur.isClosed()) {
 								try {
 									ob_out = new ObjectOutputStream(cur.getOutputStream());
-									
-									out.println("incoming");
-									Thread.sleep(500);
 									ob_out.writeObject(migrations.get(i));
 								} catch (IOException e) {
-									e.printStackTrace();
-								} catch (InterruptedException e) {
 									e.printStackTrace();
 								}
 							}
