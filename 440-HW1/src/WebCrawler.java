@@ -9,7 +9,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
-public class WebCrawler {
+public class WebCrawler implements MigratableProcess {
 	private Queue<URL> linksToCheck;
 	private HashMap<URL, Boolean> seenLinks;
 	private TransactionalFileOutputStream outFile;
@@ -78,6 +78,7 @@ public class WebCrawler {
 				e.printStackTrace();
 			}
 		}
+		suspending = false;
 	}
 	
 	public void checkPageForLinks() {
@@ -86,6 +87,15 @@ public class WebCrawler {
 	
 	public void suspend()
 	{
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("Suspending");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
 		suspending = true;
 		while (suspending);
 	}

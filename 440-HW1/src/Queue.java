@@ -37,6 +37,7 @@ public class Queue <F> {
 		Node<F> newNode = new Node<F>(mp);
 		last.next = newNode;
 		last = newNode;
+		if (isEmpty()) first = newNode;
 		numElems += 1;
 	}
 	
