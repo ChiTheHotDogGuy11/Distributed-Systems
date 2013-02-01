@@ -43,6 +43,7 @@ public class SlaveListener {
 					try {
 						out = new PrintWriter(sck.getOutputStream(), true);
 						in = new BufferedReader(new InputStreamReader(sck.getInputStream()));
+						oin = new ObjectInputStream(sck.getInputStream());
 						request = in.readLine();
 					} catch (IOException e) {
 						e.printStackTrace();
@@ -53,10 +54,7 @@ public class SlaveListener {
 					} else if (request == "incoming") {
 						Thread newProcess = null;
 						try {
-							in.close();
-							oin = new ObjectInputStream(sck.getInputStream());
 							newProcess = (Thread) oin.readObject();
-							oin.close();
 							pm.addProcess(newProcess);
 						} catch (IOException e) {
 							e.printStackTrace();
