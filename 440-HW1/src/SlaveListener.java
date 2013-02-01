@@ -51,7 +51,6 @@ public class SlaveListener {
 						}
 						
 						if (request.equals("NumProcesses?")) {
-							System.out.println(pm.getNumProcesses());
 							out.println(pm.getNumProcesses());
 						} else if (request.equals("incoming")) {
 							Thread newProcess = null;

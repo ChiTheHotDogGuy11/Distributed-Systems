@@ -44,30 +44,21 @@ public class LoadManager {
 				running = true;
 				while(running) {
 					ArrayList<Socket> connections = ssw.getScokets();
+					PrintWriter out = null;
+					BufferedReader in = null;
+					
 					if (connections != null && connections.size() > 0) {
 						int[] numProcesses = new int[connections.size()];
 						for (int i = 0; i < connections.size(); i++) {
 							Socket cur = connections.get(i);
 							if (!cur.isClosed()) {
-								PrintWriter out = null;
-								BufferedReader in = null;
-								
 								try {
 									out = new PrintWriter(cur.getOutputStream(), true);
 									in = new BufferedReader(new InputStreamReader(cur.getInputStream()));
-								} catch (IOException e) {
-									e.printStackTrace();
-								}
-								
-								out.println("NumProcesses?");
-								
-								try {
+									out.println("NumProcesses?");
 									String response = in.readLine();
-									System.out.print(response);
-									//numProcesses[i] = Integer.parseInt(response);
-									//System.out.println(numProcesses[i]);
-									out.close();
-									in.close();
+									numProcesses[i] = Integer.parseInt(response);
+									System.out.println(numProcesses[i]);
 								} catch (IOException e) {
 									e.printStackTrace();
 								}
@@ -83,16 +74,10 @@ public class LoadManager {
 						for (int i = 0; i < connections.size(); i++) {
 							Socket cur = connections.get(i);
 							if (!cur.isClosed()) {
-								PrintWriter out = null;
-								
-								try {
-									out = new PrintWriter(cur.getOutputStream(), true);
-								} catch (IOException e) {
-									e.printStackTrace();
-								}
-								
 								int over = numProcesses[i] - avg;
-								out.println("migrate " + over);
+								if (over > 0) {
+									out.println("migrate " + over);
+								}
 								for(int j = 1; j <= over; j++) {
 									ObjectInputStream oin;
 									Thread obj = null;
@@ -125,7 +110,6 @@ public class LoadManager {
 								}
 							}
 							
-							PrintWriter out = null;
 							ObjectOutputStream ob_out = null;
 							Socket cur = connections.get(low_j);
 							
@@ -138,7 +122,6 @@ public class LoadManager {
 									Thread.sleep(50);
 									ob_out.writeObject(migrations.get(i));
 									
-									out.close();
 									ob_out.close();
 								} catch (IOException e) {
 									e.printStackTrace();
@@ -147,6 +130,12 @@ public class LoadManager {
 								}
 							}
 						}
+					}
+					try {
+						Thread.sleep(5000);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
 					}
 				}
 			}
