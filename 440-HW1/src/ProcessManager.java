@@ -17,6 +17,8 @@ public class ProcessManager {
 	private Socket sck = null;
 	private ServerSocketWrapper server = null;
 	private ProcessRunner pr = null;
+	private LoadManager lm = null;
+	private SlaveListener sl = null;
 	
 	public void migrate() throws IOException {
 		Thread threadToMigrate = pr.getLast();
@@ -69,7 +71,8 @@ public class ProcessManager {
 		server.start();
 		pr = new ProcessRunner();
 		pr.start();
-		
+		lm = new LoadManager(server);
+		lm.start();
 		while(isRunning) {
 			System.out.print("==> ");
 			result = br.readLine();
@@ -136,11 +139,18 @@ public class ProcessManager {
 		if (sck != null) {
 			isMaster = false;
 			server.stop();
+			lm.stop();
+			sl = new SlaveListener(sck, this);
+			try {
+				sl.start();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		}
 	}
 	
 	public void quitPM() {
-		if (sck != null) {
+		/*if (sck != null) {
 			try {
 				sck.close();
 			} catch (IOException e) {
@@ -151,7 +161,8 @@ public class ProcessManager {
 		isRunning = false;
 
 		server.stop();
-		pr.stop();
+		pr.stop();*/
+		System.exit(1);
 	}
 	
 	public ArrayList<Thread> getThreads() {
