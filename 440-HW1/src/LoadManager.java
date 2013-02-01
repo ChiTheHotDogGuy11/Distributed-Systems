@@ -58,7 +58,6 @@ public class LoadManager {
 									out.println("NumProcesses?");
 									String response = in.readLine();
 									numProcesses[i] = Integer.parseInt(response);
-									System.out.println(numProcesses[i]);
 								} catch (IOException e) {
 									e.printStackTrace();
 								}
