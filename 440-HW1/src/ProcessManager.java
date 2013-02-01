@@ -72,11 +72,9 @@ public class ProcessManager {
 		pr.start();
 		
 		while(isRunning) {
-			while(isMaster) {
-				System.out.print("==> ");
-				result = br.readLine();
-				parseCommand(result);
-			}
+			System.out.print("==> ");
+			result = br.readLine();
+			parseCommand(result);
 		}
 	}
 	
@@ -91,7 +89,11 @@ public class ProcessManager {
 		}
 		
 		if (com.equals("-c") && args.length == 1) {
-			connectAssSlave(args[0]);
+			if (isMaster) {
+			  connectAssSlave(args[0]);
+			} else {
+				System.out.println("Already connected as slave");
+			}
 		} else if (com.equals("ps") && words.length == 1) {
 			pr.printProcesses();
 		} else if (com.equals("quit") && words.length == 1) {
