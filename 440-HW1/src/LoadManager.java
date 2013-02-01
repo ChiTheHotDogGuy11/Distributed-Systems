@@ -48,24 +48,29 @@ public class LoadManager {
 						int[] numProcesses = new int[connections.size()];
 						for (int i = 0; i < connections.size(); i++) {
 							Socket cur = connections.get(i);
-							PrintWriter out = null;
-							BufferedReader in = null;
-							
-							try {
-								out = new PrintWriter(cur.getOutputStream(), true);
-								in = new BufferedReader(new InputStreamReader(cur.getInputStream()));
-							} catch (IOException e) {
-								e.printStackTrace();
-							}
-							
-							out.println("NumProcesses?");
-							
-							try {
-								numProcesses[i] = in.read();
-								out.close();
-								in.close();
-							} catch (IOException e) {
-								e.printStackTrace();
+							if (!cur.isClosed()) {
+								PrintWriter out = null;
+								BufferedReader in = null;
+								
+								try {
+									out = new PrintWriter(cur.getOutputStream(), true);
+									in = new BufferedReader(new InputStreamReader(cur.getInputStream()));
+								} catch (IOException e) {
+									e.printStackTrace();
+								}
+								
+								out.println("NumProcesses?");
+								
+								try {
+									String response = in.readLine();
+									System.out.print(response);
+									//numProcesses[i] = Integer.parseInt(response);
+									//System.out.println(numProcesses[i]);
+									out.close();
+									in.close();
+								} catch (IOException e) {
+									e.printStackTrace();
+								}
 							}
 						}
 						
@@ -77,31 +82,33 @@ public class LoadManager {
 						ArrayList<Thread> migrations = new ArrayList<Thread>();
 						for (int i = 0; i < connections.size(); i++) {
 							Socket cur = connections.get(i);
-							PrintWriter out = null;
-							
-							try {
-								out = new PrintWriter(cur.getOutputStream(), true);
-							} catch (IOException e) {
-								e.printStackTrace();
-							}
-							
-							int over = numProcesses[i] - avg;
-							out.println("migrate " + over);
-							for(int j = 1; j <= over; j++) {
-								ObjectInputStream oin;
-								Thread obj = null;
+							if (!cur.isClosed()) {
+								PrintWriter out = null;
+								
 								try {
-									oin = new ObjectInputStream(cur.getInputStream());
-									obj = (Thread) oin.readObject();
-									oin.close();
+									out = new PrintWriter(cur.getOutputStream(), true);
 								} catch (IOException e) {
-									e.printStackTrace();
-								} catch (ClassNotFoundException e) {
 									e.printStackTrace();
 								}
 								
-								if (obj != null) {
-									migrations.add(obj);
+								int over = numProcesses[i] - avg;
+								out.println("migrate " + over);
+								for(int j = 1; j <= over; j++) {
+									ObjectInputStream oin;
+									Thread obj = null;
+									try {
+										oin = new ObjectInputStream(cur.getInputStream());
+										obj = (Thread) oin.readObject();
+										oin.close();
+									} catch (IOException e) {
+										e.printStackTrace();
+									} catch (ClassNotFoundException e) {
+										e.printStackTrace();
+									}
+									
+									if (obj != null) {
+										migrations.add(obj);
+									}
 								}
 							}
 						}
@@ -122,20 +129,22 @@ public class LoadManager {
 							ObjectOutputStream ob_out = null;
 							Socket cur = connections.get(low_j);
 							
-							try {
-								out = new PrintWriter(cur.getOutputStream());
-								ob_out = new ObjectOutputStream(cur.getOutputStream());
-								
-								out.println("incoming");
-								Thread.sleep(50);
-								ob_out.writeObject(migrations.get(i));
-								
-								out.close();
-								ob_out.close();
-							} catch (IOException e) {
-								e.printStackTrace();
-							} catch (InterruptedException e) {
-								e.printStackTrace();
+							if (!cur.isClosed()) {
+								try {
+									out = new PrintWriter(cur.getOutputStream());
+									ob_out = new ObjectOutputStream(cur.getOutputStream());
+									
+									out.println("incoming");
+									Thread.sleep(50);
+									ob_out.writeObject(migrations.get(i));
+									
+									out.close();
+									ob_out.close();
+								} catch (IOException e) {
+									e.printStackTrace();
+								} catch (InterruptedException e) {
+									e.printStackTrace();
+								}
 							}
 						}
 					}

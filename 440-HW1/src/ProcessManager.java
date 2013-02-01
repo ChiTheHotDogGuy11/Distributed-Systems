@@ -11,7 +11,6 @@ import java.util.ArrayList;
 
 public class ProcessManager {
 	
-	private ArrayList<Thread> threads = new ArrayList<Thread>();
 	private boolean isMaster = true;
 	private boolean isRunning = true;
 	private Socket sck = null;
@@ -165,7 +164,7 @@ public class ProcessManager {
 		System.exit(1);
 	}
 	
-	public ArrayList<Thread> getThreads() {
-		return threads;
+	public int getNumProcesses() {
+		return pr.getSize();
 	}
 }
