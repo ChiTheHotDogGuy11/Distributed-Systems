@@ -45,13 +45,14 @@ public class SlaveListener {
 							out = new PrintWriter(sck.getOutputStream(), true);
 							in = new BufferedReader(new InputStreamReader(sck.getInputStream()));
 							request = in.readLine();
+							System.out.print(request);
 							in.close();
 						} catch (IOException e) {
 							e.printStackTrace();
 						}
 						
 						if (request == "NumProcesses?\n") {
-							out.println(pm.getThreads().size());
+							out.println(pm.getNumProcesses());
 						} else if (request == "incoming") {
 							Thread newProcess = null;
 							try {
