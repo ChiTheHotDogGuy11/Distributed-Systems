@@ -46,14 +46,14 @@ public class SlaveListener {
 							in = new BufferedReader(new InputStreamReader(sck.getInputStream()));
 							request = in.readLine();
 							System.out.print(request);
-							in.close();
 						} catch (IOException e) {
 							e.printStackTrace();
 						}
 						
-						if (request == "NumProcesses?\n") {
+						if (request.equals("NumProcesses?")) {
+							System.out.println(pm.getNumProcesses());
 							out.println(pm.getNumProcesses());
-						} else if (request == "incoming") {
+						} else if (request.equals("incoming")) {
 							Thread newProcess = null;
 							try {
 								oin = new ObjectInputStream(sck.getInputStream());
@@ -68,7 +68,7 @@ public class SlaveListener {
 						} else {
 							try { 
 								String[] reqArray = request.split(" ");
-								if (reqArray.length == 2 && reqArray[0] == "migrate") {
+								if (reqArray.length == 2 && reqArray[0].equals("migrate")) {
 									int over = Integer.parseInt(reqArray[1]);
 									for (int i = 0; i < over; i++) {
 											pm.migrate();
@@ -78,7 +78,6 @@ public class SlaveListener {
 								e.printStackTrace();
 							}
 						}
-						out.close();
 					}
 				}
 			}
