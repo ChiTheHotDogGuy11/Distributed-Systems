@@ -1,11 +1,30 @@
 import java.util.ArrayList;
 
+/** ProcessRunner
+ * 
+ * Class designed to manage and run processes in parallel with the
+ * ProcessManager accepting commands
+ * 
+ * @author Tyler Healy (thealy)
+ */
 public class ProcessRunner {
 	
+	//Boolean to detect if thread should still run
 	private volatile boolean running;
+	
+	//Thread on which this process runs
 	private Thread thread;
+	
+	//List of threads being managed by the ProcessManager
 	private ArrayList<Thread> threads = new ArrayList<Thread>();
 	
+	/** start()
+	 * 
+	 * Creates a thread to run the ProcessRunner
+	 * Runs processes within this thread
+	 * 
+	 * @throws Exception - if start is run once the thread has already started
+	 */
 	public synchronized void start() throws Exception {
 		if (thread != null) {
 			throw new Exception("ProcessRunner already started.");
@@ -13,6 +32,11 @@ public class ProcessRunner {
 			
 		thread = new Thread(new Runnable() {
 			@Override
+			/** run()
+			 * 
+			 * The run function of the runnable object within the thread
+			 * Runs the processes the ProcessManager is managing
+			 */
 			public void run() {
 				running = true;
 				while(running) {

@@ -1,6 +1,13 @@
 import java.lang.Runnable;
 import java.io.Serializable;
 
+/** MigrateableProcess
+ * 
+ * Interface for processes that can be run in a thread and serialized to be
+ * sent to other ProcessManagers
+ * 
+ * @author Tyler Healy (thealy)
+ */
 public interface MigratableProcess extends Runnable, Serializable {
 
 	/** suspend()
