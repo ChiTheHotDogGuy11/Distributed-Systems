@@ -51,9 +51,9 @@ public class SlaveListener {
 							e.printStackTrace();
 						}
 						
-						if (request == "NumProcesses?\n") {
+						if (request.equals("NumProcesses?")) {
 							out.println(pm.getNumProcesses());
-						} else if (request == "incoming") {
+						} else if (request.equals("incoming")) {
 							Thread newProcess = null;
 							try {
 								oin = new ObjectInputStream(sck.getInputStream());
@@ -68,7 +68,7 @@ public class SlaveListener {
 						} else {
 							try { 
 								String[] reqArray = request.split(" ");
-								if (reqArray.length == 2 && reqArray[0] == "migrate") {
+								if (reqArray.length == 2 && reqArray[0].equals("migrate")) {
 									int over = Integer.parseInt(reqArray[1]);
 									for (int i = 0; i < over; i++) {
 											pm.migrate();
