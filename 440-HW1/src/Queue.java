@@ -6,12 +6,12 @@ public class Queue <F> {
 		Node<F> newNode = new Node<F>(mp);
 		first = newNode;
 		last = newNode;
-		numElems = 0;
+		numElems = 1;
 	}
 	
 	private class Node <E>{
-		private E value;
-		private Node<E> next;
+		public E value;
+		public Node<E> next;
 		
 		public Node(E mp) {
 			value = mp;
