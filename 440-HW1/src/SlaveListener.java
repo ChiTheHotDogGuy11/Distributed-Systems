@@ -57,7 +57,6 @@ public class SlaveListener {
 							try {
 								oin = new ObjectInputStream(sck.getInputStream());
 								newProcess = (MigratableProcess) oin.readObject();
-								oin.close();
 								mpw = new MigratableProcessWrapper(newProcess);
 								pm.addProcess(mpw);
 							} catch (IOException e) {
