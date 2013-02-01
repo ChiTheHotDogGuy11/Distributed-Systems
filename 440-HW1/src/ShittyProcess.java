@@ -11,7 +11,7 @@ public class ShittyProcess implements MigratableProcess {
 		int i = 0;
 		while (!suspending) { 
 			Fib(i++);
-			if (i > 50) {
+			if (i > 45) {
 				break;
 			}
 		}

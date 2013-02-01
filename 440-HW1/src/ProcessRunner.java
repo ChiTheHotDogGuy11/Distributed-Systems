@@ -58,4 +58,13 @@ public class ProcessRunner {
 			System.out.println(cur.getName());
 		}
 	}
+	
+	public synchronized Thread getLast() {
+		if (threads.size() == 0) {
+			return null;
+		} 
+		
+		threads.get(threads.size() - 1).suspend();
+		return threads.remove(threads.size() - 1);
+	}
 }

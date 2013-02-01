@@ -12,7 +12,6 @@ import java.util.ArrayList;
 
 public class ProcessManager {
 	
-	private Queue<ProcessManager> childProcessManagers;
 	private ArrayList<Thread> threads = new ArrayList<Thread>();
 	private boolean isMaster = true;
 	private boolean isRunning = true;
@@ -20,18 +19,12 @@ public class ProcessManager {
 	private ServerSocketWrapper server = null;
 	private ProcessRunner pr = null;
 	
-	/*@SuppressWarnings("deprecation")
-	public String migrate() throws IOException {
-		//Thread threadToMigrate = threads.dequeue();
-		threadToMigrate.suspend();
-		String fileName = "hmmKay";
-        FileOutputStream fileOut = new FileOutputStream(fileName);
-        ObjectOutputStream out = new ObjectOutputStream(fileOut);
+	public void migrate() throws IOException {
+		Thread threadToMigrate = pr.getLast();
+        ObjectOutputStream out = new ObjectOutputStream(sck.getOutputStream());
         out.writeObject(threadToMigrate);
         out.close();
-        fileOut.close();
-        return fileName;
-	}*/
+	}
 	
 	public Thread acceptProcess(String command, String[] args) {
 		Class<?> processClass = null;
