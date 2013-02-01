@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.ObjectInputStream;
 import java.io.PrintWriter;
 import java.net.Socket;
 
@@ -36,11 +37,13 @@ public class SlaveListener {
 				while(running) {
 					PrintWriter out = null;
 					BufferedReader in = null;
+					ObjectInputStream oin = null;
 					String request = "";
 					
 					try {
 						out = new PrintWriter(sck.getOutputStream(), true);
 						in = new BufferedReader(new InputStreamReader(sck.getInputStream()));
+						oin = new ObjectInputStream(sck.getInputStream());
 						request = in.readLine();
 					} catch (IOException e) {
 						e.printStackTrace();
@@ -48,6 +51,16 @@ public class SlaveListener {
 					
 					if (request == "NumProcesses?\n") {
 						out.println(pm.getThreads().size());
+					} else if (request == "incoming") {
+						Thread newProcess = null;
+						try {
+							newProcess = (Thread) oin.readObject();
+							pm.addProcess(newProcess);
+						} catch (IOException e) {
+							e.printStackTrace();
+						} catch (ClassNotFoundException e) {
+							e.printStackTrace();
+						}
 					} else {
 						try { 
 							String[] reqArray = request.split(" ");
