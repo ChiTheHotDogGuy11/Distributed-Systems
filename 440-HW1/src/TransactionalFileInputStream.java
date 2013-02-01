@@ -7,7 +7,6 @@ import java.io.InputStream;
 /** TransactionalFileInputStream
  * 
  * Class designed to safely read from file across distributed system
- * 
  * @author Tyler Healy (thealy)
  */
 public class TransactionalFileInputStream extends InputStream implements Serializable {
