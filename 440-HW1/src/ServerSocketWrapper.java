@@ -1,12 +1,15 @@
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.sql.Connection;
+import java.util.ArrayList;
 
 public class ServerSocketWrapper {
 
 	private Thread thread;
     private ServerSocket server;
     private volatile boolean running;
+    private ArrayList<Socket> sockets = new ArrayList<Socket>();
     
     private int port;
     private int backlog;
@@ -28,13 +31,13 @@ public class ServerSocketWrapper {
 				running = true;
 				while(running) {
 					try {
-						server.accept();
-					} catch (IOException e) {
-						e.printStackTrace();
-					}
+						sockets.add(server.accept());
+					} catch (IOException e) { }
 				}
 			}
 		});
+		
+		thread.start();
 	}
 	
 	public synchronized void stop() {
@@ -46,10 +49,12 @@ public class ServerSocketWrapper {
 		if (server != null) {
 			try {
 				server.close();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
+			} catch (Exception e) { }
 		}
 		thread = null;
-	}	
+	}
+	
+	public synchronized ArrayList<Socket> getScokets() {
+		return sockets;
+	}
 }

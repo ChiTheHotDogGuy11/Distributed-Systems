@@ -8,19 +8,21 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.net.Socket;
 import java.net.UnknownHostException;
+import java.util.ArrayList;
 
 public class ProcessManager {
 	
 	private Queue<ProcessManager> childProcessManagers;
-	private Queue<Thread> threads = new Queue<Thread>(null);
+	private ArrayList<Thread> threads = new ArrayList<Thread>();
 	private boolean isMaster = true;
 	private boolean isRunning = true;
 	private Socket sck = null;
 	private ServerSocketWrapper server = null;
+	private ProcessRunner pr = null;
 	
-	@SuppressWarnings("deprecation")
+	/*@SuppressWarnings("deprecation")
 	public String migrate() throws IOException {
-		Thread threadToMigrate = threads.dequeue();
+		//Thread threadToMigrate = threads.dequeue();
 		threadToMigrate.suspend();
 		String fileName = "hmmKay";
         FileOutputStream fileOut = new FileOutputStream(fileName);
@@ -29,7 +31,7 @@ public class ProcessManager {
         out.close();
         fileOut.close();
         return fileName;
-	}
+	}*/
 	
 	public Thread acceptProcess(String command, String[] args) {
 		Class<?> processClass = null;
@@ -73,6 +75,8 @@ public class ProcessManager {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		server = new ServerSocketWrapper(2004, 10);
 		server.start();
+		pr = new ProcessRunner();
+		pr.start();
 		
 		while(isRunning) {
 			while(isMaster) {
@@ -96,7 +100,7 @@ public class ProcessManager {
 		if (com.equals("-c") && args.length == 1) {
 			connectAssSlave(args[0]);
 		} else if (com.equals("ps") && words.length == 1) {
-			System.out.println("ps Success!");
+			pr.printProcesses();
 		} else if (com.equals("quit") && words.length == 1) {
 			quitPM();
 		} else {
@@ -108,15 +112,7 @@ public class ProcessManager {
 	}
 	
 	public void addProcess(Thread newProcess) {
-		threads.enqueue(newProcess);
-		
-		try {
-			newProcess.join();
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		newProcess.start();
+		pr.addThread(newProcess);
 	}
 	
 	public void connectAssSlave(String hostname) {
@@ -145,6 +141,7 @@ public class ProcessManager {
 		
 		if (sck != null) {
 			isMaster = false;
+			server.stop();
 		}
 	}
 	
@@ -158,6 +155,12 @@ public class ProcessManager {
 		}
 		isMaster = false;
 		isRunning = false;
+
 		server.stop();
+		pr.stop();
+	}
+	
+	public ArrayList<Thread> getThreads() {
+		return threads;
 	}
 }

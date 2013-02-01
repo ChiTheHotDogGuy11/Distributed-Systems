@@ -17,6 +17,10 @@ public class Queue <F> {
 			value = mp;
 			next = null;
 		}
+		
+		public E getValue() {
+			return value;
+		}
 	}
 	
 	public F dequeue() {
@@ -34,6 +38,10 @@ public class Queue <F> {
 		last.next = newNode;
 		last = newNode;
 		numElems += 1;
+	}
+	
+	public Node<F> getHead() {
+		return first;
 	}
 	
 	public boolean isEmpty() {
