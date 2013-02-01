@@ -58,6 +58,10 @@ public class ProcessRunner {
 		thread.start();
 	}
 	
+	/** stop()
+	 * 
+	 * Stops the ProcessRunner by setting the running boolean to false
+	 */
 	public synchronized void stop() {
 		for (int i = 0; i < threads.size(); i++) {
 			threads.get(i).interrupt();
@@ -67,10 +71,20 @@ public class ProcessRunner {
 		thread = null;
 	}
 	
+	/** addThread(Thread t)
+	 * 
+	 * Adds a thread to the list being managed by the ProcessRunner
+	 * @param t - Thread to be added to the list
+	 */
 	public synchronized void addThread(Thread t) {
 		threads.add(t);
 	}
 	
+	/** printProcesses()
+	 * 
+	 * Prints the list of processes being managed by this ProcessRunner
+	 * Called as a result of a ps command to a ProcessManager
+	 */
 	public synchronized void printProcesses() {
 		if (threads.size() == 0) {
 			System.out.println("No processes running.");
@@ -83,6 +97,11 @@ public class ProcessRunner {
 		}
 	}
 	
+	/** getLast()
+	 * 
+	 * Returns a Thread to be migrated
+	 * @return the last Thread in the list being managed by the ProcessRunner
+	 */
 	public synchronized Thread getLast() {
 		if (threads.size() == 0) {
 			return null;
