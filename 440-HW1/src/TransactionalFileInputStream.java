@@ -1,4 +1,5 @@
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.Serializable;
 import java.io.InputStream;
@@ -27,23 +28,32 @@ public class TransactionalFileInputStream extends InputStream implements Seriali
 	/** read()
 	 * 
 	 * Extends the abstract method in InputStream
-	 * Opens a FileInputStream with the fileat src
+	 * Opens a FileInputStream with the file at src
 	 * Reads a single bit from the file (or returns -1 for end of file)
 	 * Closes the FileInputStream
 	 * Returns the result of the read (or returns -1 for end of file)
 	 */
-	public int read() throws IOException {
+	public int read() {
 		
-		FileInputStream fis = new FileInputStream(src);
-		byte[] bit = new byte[1];
-	    int result = fis.read(bit, byteCounter, 1);
-	    byteCounter++;
-	    fis.close();
+		FileInputStream fis = null;
+		try {
+			fis = new FileInputStream(src);
+		} catch (FileNotFoundException e1) {
+			e1.printStackTrace();
+		}
+	    int result = -1;
+		try {
+			fis.skip(byteCounter++);
+			result = fis.read();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	    try {
+			fis.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	    
-	    if (result == -1) {
-		  return result;
-	    } else {
-	    	return bit[0];
-	    }
+	    return result;
 	}
 }
