@@ -1,72 +1,733 @@
-LINKS FROM http://www.justingreet.com
-OUTGOING LINK: https://github.com/ChiTheHotDogGuy11/Penumbra
-OUTGOING LINK: https://github.com/ChiTheHotDogGuy11/Penumbra
-OUTGOING LINK: https://github.com/ChiTheHotDogGuy11/malloc
-OUTGOING LINK: https://github.com/ChiTheHotDogGuy11/Slider-Puzzle
-OUTGOING LINK: https://github.com/ChiTheHotDogGuy11/Baseball_Predictor
-OUTGOING LINK: mailto:justin.greet11@gmail.com
-OUTGOING LINK: https://github.com/ChiTheHotDogGuy11
-LINKS FROM https://github.com/ChiTheHotDogGuy11/Penumbra
-OUTGOING LINK: https://github.com/explore
-OUTGOING LINK: https://github.com/search
-OUTGOING LINK: https://github.com/features
-OUTGOING LINK: https://github.com/blog
-OUTGOING LINK: https://github.com/signup
-OUTGOING LINK: https://github.com/login?return_to=%2FChiTheHotDogGuy11%2FPenumbra
-OUTGOING LINK: https://github.com/ChiTheHotDogGuy11/Penumbra.git
-OUTGOING LINK: https://github.com/about
-OUTGOING LINK: https://github.com/blog
-OUTGOING LINK: https://github.com/contact
-OUTGOING LINK: http://enterprise.github.com/
-OUTGOING LINK: http://status.github.com/
-OUTGOING LINK: http://mac.github.com/
-OUTGOING LINK: http://windows.github.com/
-OUTGOING LINK: http://eclipse.github.com/
-OUTGOING LINK: http://mobile.github.com/
-OUTGOING LINK: http://get.gaug.es/
-OUTGOING LINK: http://speakerdeck.com
-OUTGOING LINK: https://gist.github.com
-OUTGOING LINK: http://jobs.github.com/
-OUTGOING LINK: http://help.github.com/
-OUTGOING LINK: http://developer.github.com/
-OUTGOING LINK: http://github.github.com/github-flavored-markdown/
-OUTGOING LINK: http://pages.github.com/
-OUTGOING LINK: http://training.github.com/
-OUTGOING LINK: https://github.com/edu
-OUTGOING LINK: http://shop.github.com
-OUTGOING LINK: http://octodex.github.com/
-OUTGOING LINK: https://github.com/site/terms
-OUTGOING LINK: https://github.com/site/privacy
-OUTGOING LINK: https://github.com/security
-LINKS FROM https://github.com/ChiTheHotDogGuy11/malloc
-OUTGOING LINK: https://github.com/explore
-OUTGOING LINK: https://github.com/search
-OUTGOING LINK: https://github.com/features
-OUTGOING LINK: https://github.com/blog
-OUTGOING LINK: https://github.com/signup
-OUTGOING LINK: https://github.com/login?return_to=%2FChiTheHotDogGuy11%2Fmalloc
-OUTGOING LINK: https://github.com/ChiTheHotDogGuy11/malloc.git
-OUTGOING LINK: https://github.com/about
-OUTGOING LINK: https://github.com/blog
-OUTGOING LINK: https://github.com/contact
-OUTGOING LINK: http://enterprise.github.com/
-OUTGOING LINK: http://status.github.com/
-OUTGOING LINK: http://mac.github.com/
-OUTGOING LINK: http://windows.github.com/
-OUTGOING LINK: http://eclipse.github.com/
-OUTGOING LINK: http://mobile.github.com/
-OUTGOING LINK: http://get.gaug.es/
-OUTGOING LINK: http://speakerdeck.com
-OUTGOING LINK: https://gist.github.com
-OUTGOING LINK: http://jobs.github.com/
-OUTGOING LINK: http://help.github.com/
-OUTGOING LINK: http://developer.github.com/
-OUTGOING LINK: http://github.github.com/github-flavored-markdown/
-OUTGOING LINK: http://pages.github.com/
-OUTGOING LINK: http://training.github.com/
-OUTGOING LINK: https://github.com/edu
-OUTGOING LINK: http://shop.github.com
-OUTGOING LINK: http://octodex.github.com/
-OUTGOING LINK: https://github.com/site/terms
-OUTGOING LINK: https://github.com/site/privacy
-OUTGOING LINK: 
+LINKS FROM http://www.google.com
+       OUTGOING LINK: http://www.google.com/imghp?hl=en&tab=wi
+       OUTGOING LINK: http://maps.google.com/maps?hl=en&tab=wl
+       OUTGOING LINK: https://play.google.com/?hl=en&tab=w8
+       OUTGOING LINK: http://www.youtube.com/?tab=w1
+       OUTGOING LINK: http://news.google.com/nwshp?hl=en&tab=wn
+       OUTGOING LINK: https://mail.google.com/mail/?tab=wm
+       OUTGOING LINK: https://drive.google.com/?tab=wo
+       OUTGOING LINK: http://www.google.com/intl/en/options/
+       OUTGOING LINK: http://www.google.com/history/optout?hl=en
+       OUTGOING LINK: https://accounts.google.com/ServiceLogin?hl=en&continue=http://www.google.com/
+       OUTGOING LINK: http://www.youtube.com/adblitz
+       OUTGOING LINK: https://plus.google.com/116899029375914044550
+LINKS FROM http://www.google.com/imghp?hl=en&tab=wi
+       OUTGOING LINK: http://www.google.com/webhp?hl=en&tab=iw
+       OUTGOING LINK: http://maps.google.com/maps?hl=en&tab=il
+       OUTGOING LINK: https://play.google.com/?hl=en&tab=i8
+       OUTGOING LINK: http://www.youtube.com/?hl=en&tab=i1
+       OUTGOING LINK: http://news.google.com/nwshp?hl=en&tab=in
+       OUTGOING LINK: https://mail.google.com/mail/?tab=im
+       OUTGOING LINK: https://drive.google.com/?tab=io
+       OUTGOING LINK: http://www.google.com/intl/en/options/
+       OUTGOING LINK: http://www.google.com/history/optout?hl=en
+       OUTGOING LINK: https://accounts.google.com/ServiceLogin?hl=en&continue=http://www.google.com/imghp%3Fhl%3Den%26tab%3Dwi
+       OUTGOING LINK: http://www.youtube.com/adblitz
+       OUTGOING LINK: https://plus.google.com/116899029375914044550
+LINKS FROM http://maps.google.com/maps?hl=en&tab=wl
+       OUTGOING LINK: http://www.google.com/search?hl=en&sa=N&tab=lw
+       OUTGOING LINK: http://www.google.com/search?hl=en&tbm=isch&source=og&sa=N&tab=li
+       OUTGOING LINK: https://play.google.com/?hl=en&tab=l8
+       OUTGOING LINK: http://www.youtube.com/?hl=en&sa=N&tab=l1
+       OUTGOING LINK: http://news.google.com/nwshp?hl=en&tab=ln
+       OUTGOING LINK: https://mail.google.com/mail/?tab=lm
+       OUTGOING LINK: https://drive.google.com/?tab=lo
+       OUTGOING LINK: http://www.google.com/intl/en/options/
+       OUTGOING LINK: http://maps.google.com/maps?hl=en&mid=1359959364&showlabs=1
+       OUTGOING LINK: http://www.google.com/history/optout?hl=en
+       OUTGOING LINK: http://maps.google.com/support?hl=en
+       OUTGOING LINK: https://accounts.google.com/ServiceLogin?hl=en&continue=http://maps.google.com/maps%3Fhl%3Den%26mid%3D1359959364&service=local
+       OUTGOING LINK: http://maps.google.com/support/bin/topic.py?topic=10781&amp;hl=en
+       OUTGOING LINK: http://www.google.com/local/add?hl=en&gl=us
+       OUTGOING LINK: http://maps.google.com/support?hl=en
+       OUTGOING LINK: http://www.google.com/intl/en_us/help/terms_maps.html
+       OUTGOING LINK: http://www.google.com/intl/en_us/policies/privacy/
+LINKS FROM https://play.google.com/?hl=en&tab=w8
+       OUTGOING LINK: http://www.google.com/webhp?hl=en&tab=8w
+       OUTGOING LINK: http://www.google.com/imghp?hl=en&tab=8i
+       OUTGOING LINK: https://maps.google.com/maps?hl=en&tab=8l
+       OUTGOING LINK: https://www.youtube.com/?tab=81
+       OUTGOING LINK: https://news.google.com/nwshp?hl=en&tab=8n
+       OUTGOING LINK: https://mail.google.com/mail/?tab=8m
+       OUTGOING LINK: https://drive.google.com/?tab=8o
+       OUTGOING LINK: http://www.google.com/intl/en/options/
+       OUTGOING LINK: https://www.google.com/accounts/ServiceLogin?service=googleplay&passive=1209600&continue=https://play.google.com/store?hl%3Den%26tab%3Dw8&followup=https://play.google.com/store?hl%3Den%26tab%3Dw8&hl=en
+       OUTGOING LINK: https://play.google.com/intl/en_us/about/giftcards
+       OUTGOING LINK: http://support.google.com/googleplay/?hl=en
+       OUTGOING LINK: https://play.google.com/intl/en_us/about/play-terms.html
+       OUTGOING LINK: https://play.google.com/intl/en_us/about/device-terms.html
+       OUTGOING LINK: https://support.google.com/googleplay/bin/answer.py?answer=1196018&amp;hl=en
+       OUTGOING LINK: http://developer.android.com/index.html
+       OUTGOING LINK: https://play.google.com/artists
+LINKS FROM http://www.youtube.com/?tab=w1
+       OUTGOING LINK: http://www.youtube.com/adblitz?feature=inp-lt-adb
+       OUTGOING LINK: https://accounts.google.com/ServiceLogin?uilel=3&amp;passive=true&amp;continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26hl%3Den_US%26next%3D%252F%253Ffeature%253Dsignin%26nomobiletemp%3D1&amp;hl=en_US&amp;service=youtube
+       OUTGOING LINK: http://www.google.com/intl/en/policies/privacy/
+       OUTGOING LINK: https://accounts.google.com/ServiceLogin?uilel=3&passive=true&continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26feature%3Dplaylist%26hl%3Den_US%26next%3D%252F%253Ftab%253Dw1%26nomobiletemp%3D1&hl=en_US&service=youtube
+       OUTGOING LINK: https://accounts.google.com/ServiceLogin?uilel=3&passive=true&continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26feature%3Dplaylist%26hl%3Den_US%26next%3D%252F%253Ftab%253Dw1%26nomobiletemp%3D1&hl=en_US&service=youtube
+LINKS FROM http://news.google.com/nwshp?hl=en&tab=wn
+       OUTGOING LINK: http://www.google.com/webhp?hl=en&tab=nw
+       OUTGOING LINK: http://www.google.com/imghp?hl=en&tab=ni
+       OUTGOING LINK: http://maps.google.com/maps?hl=en&tab=nl
+       OUTGOING LINK: https://play.google.com/?hl=en&tab=n8
+       OUTGOING LINK: http://www.youtube.com/?tab=n1
+       OUTGOING LINK: https://mail.google.com/mail/?tab=nm
+       OUTGOING LINK: https://drive.google.com/?tab=no
+       OUTGOING LINK: http://www.google.com/intl/en/options/
+       OUTGOING LINK: http://www.google.com/history/optout?hl=en
+       OUTGOING LINK: https://www.google.com/accounts/ServiceLogin?service=news&passive=1209600&continue=http://news.google.com/nwshp?hl%3Den%26tab%3Dwn&followup=http://news.google.com/nwshp?hl%3Den%26tab%3Dwn&hl=en
+       OUTGOING LINK: http://support.google.com/news/bin/answer.py?hl=en&amp;answer=40237
+       OUTGOING LINK: http://keepingscore.blogs.time.com/2013/02/01/five-ways-to-sound-smart-about-the-super-bowl/
+       OUTGOING LINK: http://www.usatoday.com/story/sports/nfl/2013/02/03/san-francisco-49ers-baltimore-ravens-harbaugh-duel/1888987/
+       OUTGOING LINK: http://www.chicagotribune.com/sports/football/bears/ct-spt-0204-super-bowl--20130204,0,1871730.story
+       OUTGOING LINK: https://plus.google.com/111616434025797931601/posts
+       OUTGOING LINK: http://abcnews.go.com/US/baltimore-ravens-win-super-bowl-xlvii/story?id=18396866
+       OUTGOING LINK: http://www.stltoday.com/sports/columns/bernie-miklasz/ravens-had-the-mo-joe/article_3973a587-5e17-58b1-ad1f-bfd38f7f6789.html
+       OUTGOING LINK: http://www.washingtonpost.com/sports/redskins/as-their-parents-predicted-john-harbaughs-ravens-jims-49ers-stage-a-super-bowl-thriller/2013/02/03/17b48552-6e82-11e2-b35a-0ee56f0518d2_story.html
+       OUTGOING LINK: http://live.jsonline.com/Event/Live_Super_Bowl_Blog_Baltimore_Ravens_vs_San_Francisco_49ers?Page=0
+       OUTGOING LINK: http://en.wikipedia.org/wiki/Super_Bowl_XLVII
+       OUTGOING LINK: http://espn.go.com/blog/nflnation/post/_/id/72170/five-yards-to-go-the-ravens-last-stand
+       OUTGOING LINK: http://espn.go.com/blog/nflnation/post/_/id/72170/five-yards-to-go-the-ravens-last-stand
+       OUTGOING LINK: http://www.nytimes.com/2013/02/04/sports/football/super-bowl-joe-flaccos-precision-typical-of-elite-quarterbacks.html
+       OUTGOING LINK: http://www.nytimes.com/2013/02/04/sports/football/super-bowl-joe-flaccos-precision-typical-of-elite-quarterbacks.html
+       OUTGOING LINK: http://sports.yahoo.com/news/nfl--lights-out-super-bowl--ravens-make-final-stand-to-beat-niners-for-nfl-title--034741080.html
+       OUTGOING LINK: http://sports.yahoo.com/news/nfl--lights-out-super-bowl--ravens-make-final-stand-to-beat-niners-for-nfl-title--034741080.html
+       OUTGOING LINK: http://sports.yahoo.com/blogs/nfl-shutdown-corner/john-jim-harbaugh-share-sweet-awkward-exchange-ravens-040235028--nfl.html
+       OUTGOING LINK: http://sports.yahoo.com/blogs/nfl-shutdown-corner/john-jim-harbaugh-share-sweet-awkward-exchange-ravens-040235028--nfl.html
+       OUTGOING LINK: http://abcnews.go.com/Sports/wireStory/lights-ravens-beat-49ers-34-31-super-bowl-18396865
+       OUTGOING LINK: http://abcnews.go.com/Sports/wireStory/lights-ravens-beat-49ers-34-31-super-bowl-18396865
+       OUTGOING LINK: http://www.chicagotribune.com/sports/football/bears/ct-spt-0204-super-bowl--20130204,0,1871730.story
+       OUTGOING LINK: http://www.chicagotribune.com/sports/football/bears/ct-spt-0204-super-bowl--20130204,0,1871730.story
+       OUTGOING LINK: http://www.cbsnews.com/8301-400_162-57567377/super-bowl-2013-ravens-withstand-49ers-rally-and-power-outage-surge-to-championship/
+       OUTGOING LINK: http://www.cbsnews.com/8301-400_162-57567377/super-bowl-2013-ravens-withstand-49ers-rally-and-power-outage-surge-to-championship/
+       OUTGOING LINK: http://www.nytimes.com/2013/02/04/sports/football/power-outage-in-superdome-delays-super-bowl.html
+       OUTGOING LINK: http://www.nytimes.com/2013/02/04/sports/football/power-outage-in-superdome-delays-super-bowl.html
+       OUTGOING LINK: http://abcnews.go.com/Sports/wireStory/lights-power-outage-stops-game-super-bowl-18395164
+       OUTGOING LINK: http://abcnews.go.com/Sports/wireStory/lights-power-outage-stops-game-super-bowl-18395164
+       OUTGOING LINK: http://www.cbsnews.com/8301-400_162-57567382/baltimore-qb-joe-flacco-wins-super-bowl-mvp-award/
+       OUTGOING LINK: http://www.cbsnews.com/8301-400_162-57567382/baltimore-qb-joe-flacco-wins-super-bowl-mvp-award/
+       OUTGOING LINK: http://sports.yahoo.com/blogs/nfl-shutdown-corner/joe-flacco-validates-himself-super-bowl-mvp-award-035953835--nfl.html
+       OUTGOING LINK: http://sports.yahoo.com/blogs/nfl-shutdown-corner/joe-flacco-validates-himself-super-bowl-mvp-award-035953835--nfl.html
+       OUTGOING LINK: http://espn.go.com/nfl/playoffs/2012/story/_/id/8911864/2013-super-bowl-power-outage-stops-game-super-bowl-xlvii
+       OUTGOING LINK: http://espn.go.com/nfl/playoffs/2012/story/_/id/8911864/2013-super-bowl-power-outage-stops-game-super-bowl-xlvii
+       OUTGOING LINK: http://sports.yahoo.com/blogs/nfl-shutdown-corner/colin-kaepernick-chance-pull-off-game-winning-drive-034047259--nfl.html
+       OUTGOING LINK: http://sports.yahoo.com/blogs/nfl-shutdown-corner/colin-kaepernick-chance-pull-off-game-winning-drive-034047259--nfl.html
+       OUTGOING LINK: http://sports.yahoo.com/blogs/nfl-shutdown-corner/baltimore-ravens-win-super-bowl-xlvii-035239410--nfl.html
+       OUTGOING LINK: http://sports.yahoo.com/blogs/nfl-shutdown-corner/baltimore-ravens-win-super-bowl-xlvii-035239410--nfl.html
+       OUTGOING LINK: http://www.usatoday.com/story/gameon/2013/02/03/superdome-black-out-super-bowl-xlvii/1889009/
+       OUTGOING LINK: http://www.usatoday.com/story/gameon/2013/02/03/superdome-black-out-super-bowl-xlvii/1889009/
+       OUTGOING LINK: http://sports.yahoo.com/blogs/nfl-shutdown-corner/power-outage-super-bowl-adds-unexpected-element-big-014914888--nfl.html
+       OUTGOING LINK: http://sports.yahoo.com/blogs/nfl-shutdown-corner/power-outage-super-bowl-adds-unexpected-element-big-014914888--nfl.html
+       OUTGOING LINK: http://blog.chron.com/ultimatetexans/2013/02/ravens-survive-wild-finish-to-claim-second-super-bowl-title/
+       OUTGOING LINK: http://blog.chron.com/ultimatetexans/2013/02/ravens-survive-wild-finish-to-claim-second-super-bowl-title/
+       OUTGOING LINK: http://msn.foxsports.com/nfl/story/super-bowl-xlvii-power-goes-out-at-superdome-020313
+       OUTGOING LINK: http://msn.foxsports.com/nfl/story/super-bowl-xlvii-power-goes-out-at-superdome-020313
+       OUTGOING LINK: http://www.cbssports.com/nfl/blog/eye-on-football/21633436/super-bowl-grades-power-outage-gives-game-new-life
+       OUTGOING LINK: http://www.cbssports.com/nfl/blog/eye-on-football/21633436/super-bowl-grades-power-outage-gives-game-new-life
+       OUTGOING LINK: http://www.nydailynews.com/sports/football/blackout-sunday-ravens-win-wild-super-bowl-xlvii-49ers-34-31-article-1.1254556
+       OUTGOING LINK: http://www.nydailynews.com/sports/football/blackout-sunday-ravens-win-wild-super-bowl-xlvii-49ers-34-31-article-1.1254556
+       OUTGOING LINK: http://www.nytimes.com/2013/02/04/business/media/super-bowl-commercials-relied-on-outdated-ad-tactics.html
+       OUTGOING LINK: http://www.reuters.com/article/2013/02/04/us-nfl-superbowl-advertising-idUSBRE91304G20130204
+       OUTGOING LINK: http://www.nydailynews.com/entertainment/tv-movies/best-worst-super-bowl-ads-article-1.1254564
+       OUTGOING LINK: http://www.post-gazette.com/stories/ae/tv-radio/tuned-in-super-bowl-ads-largely-disappoint-673351/
+       OUTGOING LINK: http://www.huffingtonpost.com/2013/02/04/oh-the-drama-super-ads-go_n_2613253.html
+       OUTGOING LINK: http://en.wikipedia.org/wiki/Super_Bowl_advertising
+       OUTGOING LINK: http://www.skynews.com.au/topstories/article.aspx?id=842352
+       OUTGOING LINK: http://latimesblogs.latimes.com/lanow/2013/02/at-least-8-dead-more-than-20-hurt-in-tour-bus-crash.html
+       OUTGOING LINK: http://www.foxnews.com/us/2013/02/03/multiple-deaths-reported-after-tour-bus-overturns-east-los-angeles/
+       OUTGOING LINK: http://www.reuters.com/article/2013/02/04/usa-crash-calfornia-idUSL1N0B40BM20130204
+       OUTGOING LINK: http://www.necn.com/02/04/13/Update-on-the-latest-news-sports-busines/landing_nation.html?&amp;apID=448d00ac134b4441bbb00eff373934da
+       OUTGOING LINK: http://www.nydailynews.com/entertainment/music-arts/beyonce-rocks-super-bowl-halftime-show-destiny-child-article-1.1254476?localLinksEnabled=false
+       OUTGOING LINK: http://www.nytimes.com/2013/02/04/sports/football/beyonce-brings-intensity-to-halftime-show-and-silences-doubters.html
+       OUTGOING LINK: http://abcnews.go.com/Entertainment/wireStory/keys-sings-national-anthem-piano-super-bowl-18393864
+       OUTGOING LINK: http://www.hollywoodreporter.com/news/beyonce-tour-dates-mrs-carter-417748
+       OUTGOING LINK: http://www.chicagotribune.com/entertainment/music/turnitup/chi-beyonce-halftime-show-super-bowl-20130203,0,6303632.column
+       OUTGOING LINK: http://en.wikipedia.org/wiki/Bootylicious
+       OUTGOING LINK: http://www.livemint.com/Consumer/j8mEXoI3WUMLqvrltkNzjL/BlackBerry-searching-high-and-low-in-India-Indonesia.html
+       OUTGOING LINK: http://news.cnet.com/8301-17852_3-57567371-71/that-cant-have-been-blackberrys-super-bowl-ad-can-it/
+       OUTGOING LINK: https://plus.google.com/107072035581218462658/posts
+       OUTGOING LINK: https://plus.google.com/107072035581218462658/posts
+       OUTGOING LINK: http://online.wsj.com/article/SB10001424127887323701904578276102193619618.html?mod=googlenews_wsj
+       OUTGOING LINK: https://plus.google.com/106866314115446788652/posts
+       OUTGOING LINK: http://exitevent.com/blackberrys-new-coat-of-paint-1324.asp
+       OUTGOING LINK: https://plus.google.com/102859100854481091325/posts
+       OUTGOING LINK: http://www.reuters.com/article/2013/02/03/blackberry-asia-idUSL4N0B304P20130203
+       OUTGOING LINK: http://www.brecorder.com/markets/fxmm/asia/104415.html
+       OUTGOING LINK: http://online.wsj.com/article/SB10001424127887324445904578283020692754346.html?mod=googlenews_wsj
+       OUTGOING LINK: http://www.ft.com/cms/s/0/4a4aacee-6bbc-11e2-a700-00144feab49a.html
+       OUTGOING LINK: http://www.bloomberg.com/news/2013-02-03/japan-finance-minister-models-policy-after-1930s-stimulus.html
+       OUTGOING LINK: http://www.washingtonpost.com/opinions/robert-samuelson-japans-self-defeating-stimulus-cycle/2013/02/03/6c3ba148-6c9b-11e2-bd36-c0fe61a205f6_story.html
+       OUTGOING LINK: http://www.reuters.com/article/2013/02/04/us-markets-forex-idUSBRE9070IW20130204
+       OUTGOING LINK: http://www.google.com/accounts/Login?hl=en&skipvpage=true&sendvemail=false&continue=http://news.google.com/news?hl%3Den%26tab%3Dwn%26pz%3D1%26cf%3Dall%26ned%3Dus%26q
+       OUTGOING LINK: http://www.haaretz.com/news/diplomacy-defense/assad-tells-iran-after-alleged-israeli-strike-syria-can-confront-threats-and-aggression.premium-1.501134
+       OUTGOING LINK: http://world.time.com/2013/02/03/israel-suggests-responsibility-for-syria-airstrike/
+       OUTGOING LINK: http://www.foxnews.com/world/2013/02/03/israel-suggests-responsibility-for-airstrike-on-syria/
+       OUTGOING LINK: http://www.nytimes.com/2013/02/04/world/middleeast/syrian-weapons-center-said-to-be-damaged.html
+       OUTGOING LINK: http://www.haaretz.com/news/diplomacy-defense/assad-discusses-israeli-attack-with-iran-syria-can-confront-any-threats.premium-1.501134
+       OUTGOING LINK: http://www.washingtonpost.com/world/middle_east/israel-hints-at-responsibility-for-airstrike-in-syria/2013/02/03/4cfb93c0-6e02-11e2-b35a-0ee56f0518d2_story.html
+       OUTGOING LINK: http://www.bbc.co.uk/news/world-asia-21318597
+       OUTGOING LINK: http://www.bbc.co.uk/news/world-asia-21318597
+       OUTGOING LINK: http://www.chron.com/news/world/article/SKorea-US-begin-drills-amid-NKorea-nuclear-threat-4246428.php
+       OUTGOING LINK: http://www.telegraph.co.uk/news/worldnews/asia/northkorea/9846447/North-Korea-preparing-for-two-nuclear-tests.html
+       OUTGOING LINK: http://online.wsj.com/article/SB10001424127887324610504578277851504749598.html?mod=googlenews_wsj
+       OUTGOING LINK: http://www.cnn.com/2013/02/03/world/asia/south-koreans-opinion-nuclear-test/index.html
+       OUTGOING LINK: http://online.wsj.com/article/SB10001424127887324445904578281322981014036.html
+       OUTGOING LINK: http://online.wsj.com/article/SB10001424127887324445904578281322981014036.html
+       OUTGOING LINK: http://www.cnn.com/2013/02/03/world/europe/germany-iran-nuclear-talks/index.html
+       OUTGOING LINK: http://www.bloomberg.com/news/2013-02-03/iran-welcomes-u-s-offer-sees-feb-25-atomic-talks-with-powers.html
+       OUTGOING LINK: https://plus.google.com/113517477624564461585/posts
+       OUTGOING LINK: http://tehrantimes.com/politics/105374-iran-will-positively-consider-us-proposal-for-direct-talks-fm
+       OUTGOING LINK: http://www.dw.de/biden-offers-iran-direct-talks-calls-for-trans-atlantic-free-trade/a-16571444
+       OUTGOING LINK: http://www.nydailynews.com/news/national/american-sniper-author-chris-kyle-fatally-shot-article-1.1254181
+       OUTGOING LINK: http://www.nydailynews.com/news/national/american-sniper-author-chris-kyle-fatally-shot-article-1.1254181
+       OUTGOING LINK: http://www.freep.com/article/20130204/NEWS07/302040019/Vet-charged-with-killing-American-Sniper-author-Chris-Kyle-friend
+       OUTGOING LINK: http://www.latimes.com/news/nationworld/nation/la-na-kyle-killing-20130204,0,4130030.story
+       OUTGOING LINK: http://abcnews.go.com/US/seal-chris-kyle-allegedly-killed-marine/story?id=18389238
+       OUTGOING LINK: http://en.wikipedia.org/wiki/Chris_Kyle
+       OUTGOING LINK: http://fox13now.com/2013/02/03/woman-in-critical-condition-after-3-car-wreck/
+       OUTGOING LINK: http://www.deseretnews.com/article/865572187/Driver-injured-after-truck-collides-with-airplane-at-Salt-Lake-City-airport.html
+       OUTGOING LINK: http://www.standard-journal.com/news/news_ap/article_e29485b0-a099-508f-aab6-357b653ae901.html
+       OUTGOING LINK: http://www.upi.com/Top_News/US/2013/02/03/Truck-hits-parked-cargo-plane-in-Utah/UPI-44941359952437/
+       OUTGOING LINK: http://www.northjersey.com/news/Panetta_says_politics_at_play_in_Hagel_questioning.html
+       OUTGOING LINK: http://www.post-gazette.com/stories/opinion/editorials/confirm-hagel-at-a-bumpy-hearing-he-showed-knowledge-and-grit-673287/
+       OUTGOING LINK: http://www.studentnewsie.com/chuck-hagel-barrage-of-criticism-at-confirmation-16480/
+       OUTGOING LINK: http://www.guardian.co.uk/world/2013/feb/03/leon-panetta-defends-chuck-hagel
+       OUTGOING LINK: http://www.usatoday.com/story/opinion/2013/02/03/chuck-hagel-congressional-hearing/1889195/
+       OUTGOING LINK: http://nbcpolitics.nbcnews.com/_news/2013/02/03/16826953-panetta-comes-to-hagels-defense-after-nominees-difficult-confirmation-hearing?lite
+       OUTGOING LINK: http://www.thestate.com/2013/02/03/2617137/kerry-calls-foreign-officials.html
+       OUTGOING LINK: http://www.thestate.com/2013/02/03/2617137/kerry-calls-foreign-officials.html
+       OUTGOING LINK: http://www.voanews.com/content/new-us-secretary-of-state-kerry-calls-world-leaders/1596432.html
+       OUTGOING LINK: http://www.guardian.co.uk/world/2013/feb/03/john-kerry-calls-israeli-palestinian
+       OUTGOING LINK: http://security.blogs.cnn.com/2013/02/03/kerry-gets-started-at-state-speaks-to-middle-east-leaders/
+       OUTGOING LINK: http://560wgan.com/Obama-more-tax-revenue-needed-to-address-deficit-C/11435227?newsId=191314
+       OUTGOING LINK: http://www.nytimes.com/2013/02/04/us/politics/obama-says-loopholes-could-factor-in-budget-deal.html
+       OUTGOING LINK: http://www.bloomberg.com/news/2013-02-03/obama-says-u-s-needs-revenue-along-with-spending-cuts.html
+       OUTGOING LINK: http://www.cbsnews.com/8301-34222_162-57567356-10391739/obama-no-doubt-more-revenue-still-needed/
+       OUTGOING LINK: http://www.huffingtonpost.com/2013/02/03/obama-deficit_n_2612627.html?utm_hp_ref=politics
+       OUTGOING LINK: http://www.thestandard.com.hk/news_detail.asp?pp_cat=5&amp;art_id=130752&amp;sid=38886078&amp;con_type=1
+       OUTGOING LINK: http://www.bloomberg.com/news/2013-02-04/china-services-industries-grow-as-retailing-boosts-recovery-1-.html
+       OUTGOING LINK: http://www.economicpopulist.org/content/ism-manufacturing-index-pmi-531-january-2013
+       OUTGOING LINK: http://www.myiris.com/newsCentre/storyShow.php?fileR=20130204110600717&amp;dir=2013/02/04
+       OUTGOING LINK: http://www.cnbc.com/id/100430287
+       OUTGOING LINK: http://www.sfgate.com/business/bloomberg/article/No-Bear-Market-for-Treasuries-After-Worst-Start-4247877.php
+       OUTGOING LINK: http://www.seacoastonline.com/articles/20130203-BIZ-302030321
+       OUTGOING LINK: http://online.wsj.com/article/SB10001424127887324610504578278103941802518.html?mod=googlenews_wsj
+       OUTGOING LINK: http://www.bloomberg.com/news/2013-02-04/treasuries-decline-after-u-s-jobs-china-services.html
+       OUTGOING LINK: http://www.cbsnews.com/8301-34227_162-57567327/dow-14000-stocks-near-new-crest/
+       OUTGOING LINK: http://www.cbsnews.com/8301-34227_162-57567327/dow-14000-stocks-near-new-crest/
+       OUTGOING LINK: https://plus.google.com/101837244581366427027/posts
+       OUTGOING LINK: https://plus.google.com/101837244581366427027/posts
+       OUTGOING LINK: http://www.thefiscaltimes.com/Columns/2013/02/04/Dow-14000-Are-Stocks-Expensive-Now.aspx
+       OUTGOING LINK: http://natmonitor.com/2013/02/03/dow-surges-above-14000-for-first-time-since-2007/
+       OUTGOING LINK: http://www.bloomberg.com/news/2013-02-01/u-s-stock-index-futures-advance-before-employment-report.html
+       OUTGOING LINK: http://www.nytimes.com/2013/02/04/sports/football/power-outage-in-superdome-delays-super-bowl.html
+       OUTGOING LINK: http://www.nytimes.com/2013/02/04/sports/football/power-outage-in-superdome-delays-super-bowl.html
+       OUTGOING LINK: http://www.washingtonpost.com/sports/officials-superdome-outage-occurred-when-sensing-equipment-detected-an-abnormality/2013/02/04/cb45f7a2-6e8e-11e2-b35a-0ee56f0518d2_story.html
+       OUTGOING LINK: http://www.sfgate.com/news/article/Officials-Breaker-cut-power-to-Superdome-4247666.php
+       OUTGOING LINK: http://en.wikipedia.org/wiki/Super_Bowl_XLVII
+       OUTGOING LINK: http://www.cbsnews.com/8301-205_162-57567262/twitter-250000-users-data-compromised-in-hacking-attacks/
+       OUTGOING LINK: http://online.wsj.com/article/SB10001424127887323701904578278620588757006.html
+       OUTGOING LINK: http://securitywatch.pcmag.com/none/307708-twitter-breached-attackers-stole-250-000-user-data
+       OUTGOING LINK: http://abcnews.go.com/Technology/wireStory/twitter-hackers-compromise-250k-accounts-18382090
+       OUTGOING LINK: http://bits.blogs.nytimes.com/2013/02/01/twitter-hacked-data-for-250000-users-stolen/
+       OUTGOING LINK: http://www.zdnet.com/microsoft-surface-with-windows-rt-tablet-sales-disappoint-in-fourth-quarter-7000010688/
+       OUTGOING LINK: http://www.zdnet.com/microsoft-surface-with-windows-rt-tablet-sales-disappoint-in-fourth-quarter-7000010688/
+       OUTGOING LINK: https://plus.google.com/112532081027616221801/posts
+       OUTGOING LINK: https://plus.google.com/112532081027616221801/posts
+       OUTGOING LINK: http://news.cnet.com/8301-10805_3-57567343-75/microsofts-surface-pro-pops-on-best-buy/
+       OUTGOING LINK: http://www.channelregister.co.uk/2013/01/31/surface_sales_fail_to_impress/
+       OUTGOING LINK: http://www.engadget.com/2013/02/03/surface-pro-shows-up-in-some-retail-stores/
+       OUTGOING LINK: http://www.infoworld.com/t/tablets/no-microsoft-didnt-sell-900000-surface-rt-tablets-212053
+       OUTGOING LINK: https://plus.google.com/107161761287145163428/posts
+       OUTGOING LINK: http://abcnews.go.com/blogs/business/2013/02/controversial-volkswagen-super-bowl-ad-gets-viewer-approval/
+       OUTGOING LINK: http://www.huffingtonpost.com/2013/02/03/volkswagen-super-bowl-commercial-2013-jamaican-accent-racist_n_2612457.html
+       OUTGOING LINK: http://www.ftleavenworthlamp.com/article/20130203/NEWS/302039963
+       OUTGOING LINK: http://www.dailyastorian.com/news/nation_world/celebs-babies-beer-its-super-bowl-ad-time/image_736ed7dc-b6e2-5d01-b686-50a7f66f9f00.html/?mode=gallery
+       OUTGOING LINK: http://herocomplex.latimes.com/2013/02/03/iron-man-3-super-bowl-spot-leads-pack-of-disneys-latest-marvels/
+       OUTGOING LINK: http://herocomplex.latimes.com/2013/02/03/iron-man-3-super-bowl-spot-leads-pack-of-disneys-latest-marvels/
+       OUTGOING LINK: http://www.mtv.com/news/articles/1701283/iron-man-3-super-bowl-game-day-spot.jhtml
+       OUTGOING LINK: https://plus.google.com/108029912411087424550/posts
+       OUTGOING LINK: http://www.dailymail.co.uk/tvshowbiz/article-2273095/Super-Bowl-2013-Robert-Downey-Jr-reprises-role-Iron-Man-3-new-extended-trailer-released.html?ito=feeds-newsxml
+       OUTGOING LINK: http://insidemovies.ew.com/2013/02/01/robert-downey-jr-iron-man-2-flaws-part-4-of-5/
+       OUTGOING LINK: https://plus.google.com/113325788766951603516/posts
+       OUTGOING LINK: http://en.wikipedia.org/wiki/Super_Bowl_XLVII
+       OUTGOING LINK: http://online.wsj.com/article/SB10001424127887324761004578281812024380342.html?mod=googlenews_wsj
+       OUTGOING LINK: http://online.wsj.com/article/SB10001424127887324761004578281812024380342.html?mod=googlenews_wsj
+       OUTGOING LINK: http://www.huffingtonpost.com/2013/02/03/taco-bell-super-bowl-commercial_n_2612714.html
+       OUTGOING LINK: http://blogs.suntimes.com/tv/2013/02/super_bowl_commercials_best_an.html
+       OUTGOING LINK: http://www.newsday.com/sports/football/super-bowl/super-bowl-ads-the-best-and-worst-including-samsung-chrysler-taco-bell-1.4557141
+       OUTGOING LINK: http://www.mtv.com/news/articles/1701281/fast-six-super-bowl-trailer.jhtml
+       OUTGOING LINK: http://www.mtv.com/news/articles/1701281/fast-six-super-bowl-trailer.jhtml
+       OUTGOING LINK: https://plus.google.com/108029912411087424550/posts
+       OUTGOING LINK: https://plus.google.com/108029912411087424550/posts
+       OUTGOING LINK: http://www.dailymail.co.uk/tvshowbiz/article-2273101/Super-Bowl-2013-Fast-Six-debuts-action-packed-teaser-trailer-commercial-break.html?ito=feeds-newsxml
+       OUTGOING LINK: http://www.eonline.com/news/384568/vin-diesel-drives-a-car-through-a-plane-in-new-fast-the-furious-6-trailer-watch-now
+       OUTGOING LINK: http://www.usmagazine.com/entertainment/news/ben-affleck-wins-directors-guild-award-for-argo-im-on-my-way-201332
+       OUTGOING LINK: http://www.etonline.com/awards/130035_Ben_Affleck_s_Intimidating_DGA_Win_for_Argo/
+       OUTGOING LINK: http://www.reuters.com/article/2013/02/03/entertainment-us-directorsguild-idUSBRE91203820130203
+       OUTGOING LINK: http://guardianlv.com/2013/02/another-directorial-award-for-ben-afflecks-argo-just-not-an-oscar/
+       OUTGOING LINK: http://www.usatoday.com/story/life/movies/2013/02/03/affleck-argo-directors-guild/1887307/
+       OUTGOING LINK: http://www.azcentral.com/sports/golf/phoenixopen/articles/20130203phil-mickelson-getting-better-age.html
+       OUTGOING LINK: http://www.azcentral.com/sports/golf/phoenixopen/articles/20130203phil-mickelson-getting-better-age.html
+       OUTGOING LINK: http://www.usatoday.com/story/sports/golf/2013/02/03/phil-mickelson-waste-managment-phoenix-open/1888149/
+       OUTGOING LINK: http://www.latimes.com/sports/la-sp-phoenix-open-20130204,0,4111415.story
+       OUTGOING LINK: http://www.nytimes.com/2013/02/04/sports/golf/feeling-at-home-phil-mickelson-wins-wire-to-wire.html
+       OUTGOING LINK: http://www.theglobeandmail.com/sports/hockey/canadiens-beat-sens-thanks-to-questionable-call-by-referees/article8153801/
+       OUTGOING LINK: http://sports.yahoo.com/news/1-nhl-canadiens-edge-sens-extend-home-winning-001103655--nhl.html
+       OUTGOING LINK: http://www.rotoworld.com/content/playerpages/playerbreakingnews.asp?sport=NHL&amp;id=2289&amp;line=173945&amp;spln=1
+       OUTGOING LINK: http://www.sportsnetwork.com/merge/tsnform.aspx?c=sportsnetwork&amp;page=nhl/news/news.aspx?id=4562978
+       OUTGOING LINK: http://www.cbc.ca/sports/hockey/nhl/story/2013/02/02/spf-nhl-montreal-canadiens-pk-subban-coachs-corner-don-cherry.html
+       OUTGOING LINK: http://www.nhl.com/ice/news.htm?id=653673
+       OUTGOING LINK: http://www.sfgate.com/sports/article/Celts-now-4-0-without-Rondo-top-Clippers-106-104-4247336.php
+       OUTGOING LINK: http://www.boston.com/sports/basketball/celtics/2013/02/03/celtics-hold-for-win-over-clippers/BC8qVqbbzySlcPrnwNlFmO/story.html
+       OUTGOING LINK: http://www.enterprisenews.com/sports/x1893335620/Celtics-productive-bench-key-to-winning-streak
+       OUTGOING LINK: http://www.heraldnews.com/sports/x694772048/CELTICS-NOTEBOOK-Pierce-ices-victory-with-clutch-3-pointer
+       OUTGOING LINK: http://bostonherald.com/sports/celtics_nba/boston_celtics/2013/02/celtics_guarded_moves
+       OUTGOING LINK: http://abcnews.go.com/Sports/wireStory/12-louisville-routs-25-marquette-70-51-18393142
+       OUTGOING LINK: http://www.nytimes.com/2013/02/04/sports/ncaabasketball/college-basketball-roundup.html
+       OUTGOING LINK: http://sportsillustrated.cnn.com/basketball/ncaa/men/gameflash/2013/02/03/81515_recap.html
+       OUTGOING LINK: http://www.cbssports.com/collegebasketball/gametracker/preview/NCAAB_20130203_MARQET@LVILLE/marquettelouisville-preview
+       OUTGOING LINK: http://www.usatoday.com/story/sports/ncaab/bigeast/2013/02/03/louisville-routs-marquette/1887993/
+       OUTGOING LINK: http://www.sfgate.com/sports/article/Hedberg-Bernier-lead-Devils-over-Isles-3-0-4247489.php
+       OUTGOING LINK: http://www.nytimes.com/2013/02/04/sports/hockey/devils-score-3-times-in-final-4-minutes-to-top-islanders-3-0.html
+       OUTGOING LINK: http://bleacherreport.com/articles/1514807-new-jersey-devils-johan-hedberg-is-he-the-best-backup-goaltender-in-the-nhl
+       OUTGOING LINK: https://plus.google.com/100598489214334333283/posts
+       OUTGOING LINK: http://sports.yahoo.com/news/berniers-goals-help-end-devils-000004315--nhl.html
+       OUTGOING LINK: http://www.bbc.co.uk/news/uk-england-leicestershire-21083005
+       OUTGOING LINK: http://www.cnn.com/2013/02/01/world/europe/search-for-richard-iii/index.html
+       OUTGOING LINK: http://www.livescience.com/26814-skull-suspected-king-richard-iii.html
+       OUTGOING LINK: http://www.itv.com/news/update/2013-02-04/researchers-to-find-out-if-they-made-king-richard-iii-discovery/
+       OUTGOING LINK: http://www.mirror.co.uk/news/technology-science/science/head-of-state-experts-ready-to-unveil-1573413
+       OUTGOING LINK: http://www.guardian.co.uk/science/2013/feb/03/richard-3-skeleton-remains-leicester
+       OUTGOING LINK: http://thespacereporter.com/2013/02/iss-astronauts-to-watch-super-bowl-xlvii-live-from-space/
+       OUTGOING LINK: http://www.space.com/19611-super-bowl-astronauts-space-station.html
+       OUTGOING LINK: http://venturebeat.com/2013/02/03/super-bowl-internation-space-station/
+       OUTGOING LINK: https://plus.google.com/113134732777458915240/posts
+       OUTGOING LINK: http://www.forbes.com/sites/alexknapp/2013/02/03/space-station-astronauts-will-be-watching-the-super-bowl/
+       OUTGOING LINK: https://plus.google.com/109705827022896970206/posts
+       OUTGOING LINK: http://www.inquisitr.com/506470/astronauts-will-watch-super-bowl-from-outer-space/
+       OUTGOING LINK: https://plus.google.com/103960811823412461741/posts
+       OUTGOING LINK: http://www.uab.edu/news/latest/item/3114-uab-participating-in-cms-care-cost-improvement-initiative
+       OUTGOING LINK: http://news.nurse.com/article/20130203/NATIONAL02/102040034/-1/frontpage
+       OUTGOING LINK: http://www.kaiserhealthnews.org/Daily-Reports/2013/February/02/physician-payments-sunshine-act-rule.aspx
+       OUTGOING LINK: http://www.timesunion.com/opinion/article/Medicare-s-observation-status-is-unfair-to-4244626.php
+       OUTGOING LINK: http://www.npr.org/blogs/thesalt/2013/02/01/170858564/carrot-juice-instead-of-coke-usda-proposes-new-school-snack-rules
+       OUTGOING LINK: http://www.bloomberg.com/news/2013-02-01/granola-bars-replace-candy-as-u-s-limits-school-snacks.html
+       OUTGOING LINK: http://www.washingtonpost.com/politics/new-federal-rules-aim-to-make-all-foods-in-schools-healthful-get-rid-of-junk-food/2013/02/02/dae953a4-6d10-11e2-8f4f-2abd96162ba8_story.html
+       OUTGOING LINK: http://www.usatoday.com/story/news/nation/2013/02/01/junk-food-schools/1881581/
+       OUTGOING LINK: http://www.nytimes.com/2013/02/02/us/politics/us-releases-nutritional-rules-for-snacks-at-schools.html
+       OUTGOING LINK: http://abcnews.go.com/US/wireStory/fire-spokesman-multiple-deaths-tour-bus-overturns-desert-18396405
+       OUTGOING LINK: http://abcnews.go.com/Sports/wireStory/lights-power-outage-stops-game-super-bowl-18395164
+       OUTGOING LINK: http://www.foxnews.com/world/2013/02/04/american-woman-granted-divorce-from-chinese-husband-after-posted-photos/
+       OUTGOING LINK: http://support.google.com/news/bin/answer.py?answer=164818&amp;hl=en
+       OUTGOING LINK: http://www.post-gazette.com/stories/local/neighborhoods-city/pittsburgh-to-harrisburg-amtrak-route-may-end-673327/
+       OUTGOING LINK: http://www.post-gazette.com/stories/local/neighborhoods-city/allegheny-county-jail-improves-prison-release-measures-673318/
+       OUTGOING LINK: http://www.post-gazette.com/stories/news/us/us-proposal-for-free-wi-fi-shakes-telecom-industry-673324/
+       OUTGOING LINK: http://www.slate.com?google_editors_picks=true
+       OUTGOING LINK: http://www.slate.com/blogs/browbeat/2013/02/03/god_made_a_farmer_paul_harvey_speech_goes_from_youtube_to_super_bowl_ad.html?google_editors_picks=true
+       OUTGOING LINK: http://www.slate.com/blogs/browbeat/2013/02/03/beyonc_makes_rest_of_destiny_s_child_sing_single_ladies_insulting_them_yet.html?google_editors_picks=true
+       OUTGOING LINK: http://www.slate.com/blogs/xx_factor/2013/02/03/the_worst_super_bowl_ad_so_far_comes_from_godaddy_why_danica_patrick_why.html?google_editors_picks=true
+       OUTGOING LINK: http://www.slate.com/articles/arts/tv_club/features/2013/downton_abbey_season_3_recap_episode_guide_and_review_for_episode_1/week_5/downton_abbey_season_3_recap_episode_guide_and_review_for_episode_5.html?google_editors_picks=true
+       OUTGOING LINK: http://www.slate.com/blogs/the_slatest/2013/02/03/chris_wallace_fox_news_skewers_nra_chief_ridiculous_and_you_know_it.html?google_editors_picks=true
+       OUTGOING LINK: http://support.google.com/news/bin/answer.py?answer=1004865&amp;hl=en
+       OUTGOING LINK: http://dailycaller.com/2013/01/31/dominican-prostitute-senator-bob-menendez-likes-the-youngest-and-newest-girls/
+       OUTGOING LINK: http://www.pbs.org/newshour/bb/politics/jan-june13/shieldsbrooks_02-01.html
+       OUTGOING LINK: http://www.pbs.org/newshour/bb/world/jan-june13/israel_02-01.html
+       OUTGOING LINK: http://www.cnn.com/2013/02/02/us/super-bowl-five-things/index.html
+       OUTGOING LINK: http://www.pbs.org/newshour/bb/health/jan-june13/othernews_02-01.html
+       OUTGOING LINK: http://www.ibtimes.com/what-time-does-2013-super-bowl-start-kickoff-time-pregame-coverage-plus-tv-details-1046032
+       OUTGOING LINK: http://www.cnn.com/2013/02/01/us/nfl-ray-lewis-redemption/index.html
+       OUTGOING LINK: http://travel.nytimes.com/2013/02/03/travel/where-a-poets-vision-lives-on-in-india.html?pagewanted=all
+       OUTGOING LINK: http://www.cnn.com/2013/02/01/travel/grand-central-terminal-100-year-anniversary/index.html
+       OUTGOING LINK: http://news.yahoo.com/11-most-beautiful-mathematical-equations-144744064.html
+       OUTGOING LINK: http://www.huffingtonpost.com/2013/01/31/piers-morgan-enrages-chelsea-handler_n_2592070.html
+       OUTGOING LINK: http://www.huffingtonpost.com/2013/01/29/valeria-lukyanova-real-life-barbie-justin-jedlica-real-life-ken_n_2575786.html
+       OUTGOING LINK: http://www.youtube.com/watch?v=PDIqJ1E6yJc
+       OUTGOING LINK: http://www.youtube.com/watch?v=PDIqJ1E6yJc
+       OUTGOING LINK: http://www.youtube.com/watch?v=9CslmvAOH4M
+       OUTGOING LINK: http://www.youtube.com/watch?v=9CslmvAOH4M
+       OUTGOING LINK: http://www.youtube.com/watch?v=zp_RikL7qws
+       OUTGOING LINK: http://www.youtube.com/watch?v=zp_RikL7qws
+       OUTGOING LINK: http://www.youtube.com/watch?v=0pTxVqDTdPg
+       OUTGOING LINK: http://www.youtube.com/watch?v=0pTxVqDTdPg
+       OUTGOING LINK: http://www.youtube.com/watch?v=lBGSyXN35ts
+       OUTGOING LINK: http://www.youtube.com/watch?v=lBGSyXN35ts
+       OUTGOING LINK: http://www.usatoday.com/story/sports/nfl/2013/02/03/san-francisco-49ers-baltimore-ravens-harbaugh-duel/1888987/
+       OUTGOING LINK: http://www.news24.com/World/News/US-snipers-killer-had-mental-illness-20130204
+       OUTGOING LINK: http://money.cnn.com/2013/02/04/autos/super-bowl-auto-ads/
+       OUTGOING LINK: http://www.livemint.com/Consumer/j8mEXoI3WUMLqvrltkNzjL/BlackBerry-searching-high-and-low-in-India-Indonesia.html
+       OUTGOING LINK: http://uk.eurosport.yahoo.com/photos/beyonce-williams-rowland-former-group-destinys-child-perform-photo-014350525--nfl.html
+       OUTGOING LINK: http://www.chicagotribune.com/sns-rt-usa-crashcalfornial1n0b40bm-20130203,0,243759.story
+       OUTGOING LINK: http://www.channelnewsasia.com/stories/featurenews/view/1252090/1/.html
+       OUTGOING LINK: http://ibnlive.in.com/news/watch-iron-man-3-trailer-out-released-during-super-bowl/370680-8-67.html
+       OUTGOING LINK: http://www.newsday.com/news/nation/details-emerge-on-alabama-hostage-suspect-1.4557402
+       OUTGOING LINK: http://www.businesstimes.com.sg/breaking-news/world/obama-says-more-tax-revenue-needed-address-us-deficit-cbs-20130204
+       OUTGOING LINK: http://news.google.com/news?pz=1&amp;cf=all&amp;ned=us&amp;hl=en&amp;output=rss
+       OUTGOING LINK: http://support.google.com/news/bin/answer.py?hl=en&amp;answer=40237
+       OUTGOING LINK: http://news.google.com/intl/en_us/about_google_news.html
+       OUTGOING LINK: http://support.google.com/news/bin/answer.py?answer=59255&amp;hl=en
+       OUTGOING LINK: http://googlenewsblog.blogspot.com/
+       OUTGOING LINK: http://support.google.com/news/?hl=en&amp;hl=en
+       OUTGOING LINK: http://news.google.com/intl/en_us/about.html
+       OUTGOING LINK: http://www.google.com/webhp?hl=en
+       OUTGOING LINK: http://www.google.com/intl/en_us/ads/
+       OUTGOING LINK: http://www.google.com/intl/en_us/services/
+       OUTGOING LINK: https://www.google.com/intl/en_us/policies/
+       OUTGOING LINK: http://news.google.com/intl/en_us/about.html
+LINKS FROM https://mail.google.com/mail/?tab=wm
+       OUTGOING LINK: http://www.google.com/mobile/gmail/#utm_source=en-cpp-g4mc-gmhp&utm_medium=cpp&utm_campaign=en
+       OUTGOING LINK: http://mail.google.com/mail/help/intl/en/about_whatsnew.html
+       OUTGOING LINK: http://mail.google.com/mail/help/intl/en/switch.html
+       OUTGOING LINK: http://www.google.com/enterprise/apps/business/campaign/personal_gmail.html?utm_source=gmail_promo&utm_medium=et&utm_campaign=WW--2012q3--ww_apps_smb_et_2012-gmailloginpage:70160000000jf0oaag&utm_content=en_US
+       OUTGOING LINK: http://www.google.com/apps/intl/en/business/gmail.html#utm_medium=et&utm_source=gmail-signin-en&utm_campaign=crossnav
+       OUTGOING LINK: http://mail.google.com/mail/help/intl/en/terms.html
+       OUTGOING LINK: http://mail.google.com/support/?hl=en
+LINKS FROM https://drive.google.com/?tab=wo
+LINKS FROM http://www.google.com/intl/en/options/
+       OUTGOING LINK: http://toolbar.google.com/intl/en/
+       OUTGOING LINK: http://toolbar.google.com/intl/en/
+       OUTGOING LINK: http://www.youtube.com/
+       OUTGOING LINK: http://www.youtube.com/
+       OUTGOING LINK: http://play.google.com
+       OUTGOING LINK: http://play.google.com
+       OUTGOING LINK: http://books.google.com/books?hl=en
+       OUTGOING LINK: http://books.google.com/books?hl=en
+       OUTGOING LINK: http://images.google.com/imghp?hl=en
+       OUTGOING LINK: http://images.google.com/imghp?hl=en
+       OUTGOING LINK: http://news.google.com/nwshp?hl=en
+       OUTGOING LINK: http://news.google.com/nwshp?hl=en
+       OUTGOING LINK: http://picasa.google.com/intl/en/#utm_source=en-all-more&amp;amp;utm_campaign=en-pic&amp;amp;utm_medium=et
+       OUTGOING LINK: http://picasa.google.com/intl/en/#utm_source=en-all-more&amp;amp;utm_campaign=en-pic&amp;amp;utm_medium=et
+       OUTGOING LINK: http://earth.google.com/intl/en/
+       OUTGOING LINK: http://earth.google.com/intl/en/
+       OUTGOING LINK: http://www.panoramio.com/
+       OUTGOING LINK: http://www.panoramio.com/
+       OUTGOING LINK: http://sketchup.google.com/intl/en/
+       OUTGOING LINK: http://sketchup.google.com/intl/en/
+       OUTGOING LINK: http://translate.google.com/?hl=en
+       OUTGOING LINK: http://translate.google.com/?hl=en
+       OUTGOING LINK: https://plus.google.com/?utm_source=embedded&amp;utm_medium=googleabout&amp;utm_campaign=link
+       OUTGOING LINK: https://plus.google.com/?utm_source=embedded&amp;utm_medium=googleabout&amp;utm_campaign=link
+LINKS FROM http://www.google.com/history/optout?hl=en
+       OUTGOING LINK: https://history.google.com/history/optout?hl=en
+LINKS FROM https://accounts.google.com/ServiceLogin?hl=en&continue=http://www.google.com/
+       OUTGOING LINK: http://www.google.com/homepage/#utm_source=gaia&utm_medium=embedded&ch=chbk
+       OUTGOING LINK: http://www.google.com/intl/en/landing/accounts/index.html#utm_campaign=en&utm_medium=et&utm_source=gaia
+       OUTGOING LINK: https://accounts.google.com/TOS?hl=en
+       OUTGOING LINK: http://www.google.com/intl/en/privacy/
+       OUTGOING LINK: http://www.google.com/support/accounts?hl=en
+LINKS FROM http://www.youtube.com/adblitz
+       OUTGOING LINK: http://www.youtube.com/adblitz?feature=inp-lt-adb
+       OUTGOING LINK: https://accounts.google.com/ServiceLogin?service=youtube&amp;hl=en_US&amp;uilel=3&amp;continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26feature%3Dplaylist%26hl%3Den_US%26next%3D%252Fadblitz%26nomobiletemp%3D1&amp;passive=true
+       OUTGOING LINK: https://accounts.google.com/ServiceLogin?service=youtube&hl=en_US&uilel=3&continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26feature%3Dplaylist%26hl%3Den_US%26next%3D%252Fadblitz%26nomobiletemp%3D1&passive=true
+       OUTGOING LINK: https://accounts.google.com/ServiceLogin?service=youtube&hl=en_US&uilel=3&continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26feature%3Dplaylist%26hl%3Den_US%26next%3D%252Fadblitz%26nomobiletemp%3D1&passive=true
+       OUTGOING LINK: http://www.google.com/intl/en/policies/privacy/
+LINKS FROM https://plus.google.com/116899029375914044550
+       OUTGOING LINK: http://www.google.com/webhp?hl=en&tab=Xw
+       OUTGOING LINK: http://www.google.com/imghp?hl=en&tab=Xi
+       OUTGOING LINK: https://maps.google.com/maps?hl=en&tab=Xl
+       OUTGOING LINK: https://play.google.com/?hl=en&tab=X8
+       OUTGOING LINK: https://www.youtube.com/?tab=X1
+       OUTGOING LINK: https://news.google.com/nwshp?hl=en&tab=Xn
+       OUTGOING LINK: https://mail.google.com/mail/?tab=Xm
+       OUTGOING LINK: https://drive.google.com/?tab=Xo
+       OUTGOING LINK: http://www.google.com/intl/en/options/
+       OUTGOING LINK: http://www.google.com/intl/en-US/+/learnmore/forum/
+       OUTGOING LINK: http://www.google.com/history/optout?hl=en
+       OUTGOING LINK: http://www.google.com/support/profiles/?p=help_center&hl=en-US
+       OUTGOING LINK: https://accounts.google.com/ServiceLogin?service=oz&passive=1209600&continue=https://plus.google.com/%2Bgoogle&followup=https://plus.google.com/%2Bgoogle
+       OUTGOING LINK: http://www.google.com
+       OUTGOING LINK: http://www.google.com/support/plus/?hl=en_US&p=help_center
+       OUTGOING LINK: https://plus.google.com/110513187895871586746
+       OUTGOING LINK: http://www.google.com/events/bigtentbrussels/
+       OUTGOING LINK: http://www.google.com/events/bigtentbrussels/
+       OUTGOING LINK: https://plus.google.com/116899029375914044550
+       OUTGOING LINK: https://plus.google.com/103345707817934461425
+       OUTGOING LINK: https://plus.google.com/101560853443212199687
+       OUTGOING LINK: https://plus.google.com/106886664866983861036
+       OUTGOING LINK: https://plus.google.com/103345707817934461425
+       OUTGOING LINK: https://plus.google.com/116899029375914044550
+       OUTGOING LINK: https://plus.google.com/116899029375914044550
+       OUTGOING LINK: https://plus.google.com/104629412415657030658
+       OUTGOING LINK: http://goo.gl/PfbLT
+       OUTGOING LINK: https://plus.google.com/photos/116899029375914044550/albums/5840063787407597233/5840063790590052482?authkey=CIuqgoOuv7nqkwE
+       OUTGOING LINK: https://plus.google.com/photos/116899029375914044550/albums/5840063787407597233/5840063895222595490?authkey=CIuqgoOuv7nqkwE
+       OUTGOING LINK: https://plus.google.com/photos/116899029375914044550/albums/5840063787407597233/5840063895928190962?authkey=CIuqgoOuv7nqkwE
+       OUTGOING LINK: https://plus.google.com/104233435224873922474
+       OUTGOING LINK: http://googleblog.blogspot.com/2013/02/google-creates-60m-digital-publishing.html
+       OUTGOING LINK: https://plus.google.com/photos/116899029375914044550/albums/5840055013112739601/5840055014169083106?authkey=CNDTjYKszpKhKw
+       OUTGOING LINK: http://www.google.org/publicalerts
+       OUTGOING LINK: https://plus.google.com/s/%23searchtips
+       OUTGOING LINK: https://plus.google.com/s/%23googlesearch
+       OUTGOING LINK: https://plus.google.com/photos/116899029375914044550/albums/5839732413947294033/5839732418043553922?authkey=CI622vOCy6qAJw
+       OUTGOING LINK: https://plus.google.com/105617332799948800771
+       OUTGOING LINK: https://plus.google.com/111401917971052287374
+       OUTGOING LINK: http://goo.gl/OEV3r
+       OUTGOING LINK: http://goo.gl/9xGDb
+       OUTGOING LINK: http://goo.gl/bxcdE
+       OUTGOING LINK: http://www.youtube.com/watch?v=mpcar4L_EXY
+       OUTGOING LINK: https://plus.google.com/photos/116899029375914044550/albums/5839682537610920993/5839682537893586322?authkey=CKGxnvbP6NvEHw
+       OUTGOING LINK: http://tech.fortune.cnn.com/2013/01/30/volkswagen-super-bowl-ad/
+       OUTGOING LINK: http://tech.fortune.cnn.com/2013/01/30/volkswagen-super-bowl-ad/
+       OUTGOING LINK: https://plus.google.com/102703083460003550371
+       OUTGOING LINK: http://goo.gl/Wa2lv
+       OUTGOING LINK: http://www.youtube.com/watch?v=xEY10Ub-k-U
+       OUTGOING LINK: https://plus.google.com/photos/116899029375914044550/albums/5839310054847700689/5839310059296974386?authkey=CKuIvrLD0KyUrAE
+       OUTGOING LINK: http://www.google.com
+       OUTGOING LINK: http://www.google.com/support/
+       OUTGOING LINK: http://googleblog.blogspot.com/
+       OUTGOING LINK: http://twitter.com/#!/google
+       OUTGOING LINK: http://www.google.com/about/corporate/company/
+       OUTGOING LINK: http://www.google.com/press/
+       OUTGOING LINK: http://www.google.com/press/google-directory.html
+       OUTGOING LINK: https://accounts.google.com/TOS?hl=en-US
+       OUTGOING LINK: http://www.google.com/intl/en-US/help/terms_maps.html
+       OUTGOING LINK: http://www.google.com/intl/en-US/+/policy/content.html
+       OUTGOING LINK: http://www.google.com/intl/en-US/+/policy/
+LINKS FROM http://www.google.com/webhp?hl=en&tab=iw
+       OUTGOING LINK: http://www.google.com/imghp?hl=en&tab=wi
+       OUTGOING LINK: http://maps.google.com/maps?hl=en&tab=wl
+       OUTGOING LINK: https://play.google.com/?hl=en&tab=w8
+       OUTGOING LINK: http://www.youtube.com/?hl=en&tab=w1
+       OUTGOING LINK: http://news.google.com/nwshp?hl=en&tab=wn
+       OUTGOING LINK: https://mail.google.com/mail/?tab=wm
+       OUTGOING LINK: https://drive.google.com/?tab=wo
+       OUTGOING LINK: http://www.google.com/intl/en/options/
+       OUTGOING LINK: http://www.google.com/history/optout?hl=en
+       OUTGOING LINK: https://accounts.google.com/ServiceLogin?hl=en&continue=http://www.google.com/webhp%3Fhl%3Den%26tab%3Diw
+       OUTGOING LINK: http://www.youtube.com/adblitz
+       OUTGOING LINK: https://plus.google.com/116899029375914044550
+LINKS FROM http://maps.google.com/maps?hl=en&tab=il
+       OUTGOING LINK: http://www.google.com/search?hl=en&sa=N&tab=lw
+       OUTGOING LINK: http://www.google.com/search?hl=en&tbm=isch&source=og&sa=N&tab=li
+       OUTGOING LINK: https://play.google.com/?hl=en&tab=l8
+       OUTGOING LINK: http://www.youtube.com/?hl=en&sa=N&tab=l1
+       OUTGOING LINK: http://news.google.com/nwshp?hl=en&tab=ln
+       OUTGOING LINK: https://mail.google.com/mail/?tab=lm
+       OUTGOING LINK: https://drive.google.com/?tab=lo
+       OUTGOING LINK: http://www.google.com/intl/en/options/
+       OUTGOING LINK: http://maps.google.com/maps?hl=en&mid=1359959668&showlabs=1
+       OUTGOING LINK: http://www.google.com/history/optout?hl=en
+       OUTGOING LINK: http://maps.google.com/support?hl=en
+       OUTGOING LINK: https://accounts.google.com/ServiceLogin?hl=en&continue=http://maps.google.com/maps%3Fhl%3Den%26mid%3D1359959668&service=local
+       OUTGOING LINK: http://maps.google.com/support/bin/topic.py?topic=10781&amp;hl=en
+       OUTGOING LINK: http://www.google.com/local/add?hl=en&gl=us
+       OUTGOING LINK: http://maps.google.com/support?hl=en
+       OUTGOING LINK: http://www.google.com/intl/en_us/help/terms_maps.html
+       OUTGOING LINK: http://www.google.com/intl/en_us/policies/privacy/
+LINKS FROM https://play.google.com/?hl=en&tab=i8
+       OUTGOING LINK: http://www.google.com/webhp?hl=en&tab=8w
+       OUTGOING LINK: http://www.google.com/imghp?hl=en&tab=8i
+       OUTGOING LINK: https://maps.google.com/maps?hl=en&tab=8l
+       OUTGOING LINK: https://www.youtube.com/?tab=81
+       OUTGOING LINK: https://news.google.com/nwshp?hl=en&tab=8n
+       OUTGOING LINK: https://mail.google.com/mail/?tab=8m
+       OUTGOING LINK: https://drive.google.com/?tab=8o
+       OUTGOING LINK: http://www.google.com/intl/en/options/
+       OUTGOING LINK: https://www.google.com/accounts/ServiceLogin?service=googleplay&passive=1209600&continue=https://play.google.com/store?hl%3Den%26tab%3Di8&followup=https://play.google.com/store?hl%3Den%26tab%3Di8&hl=en
+       OUTGOING LINK: https://play.google.com/intl/en_us/about/giftcards
+       OUTGOING LINK: http://support.google.com/googleplay/?hl=en
+       OUTGOING LINK: https://play.google.com/intl/en_us/about/play-terms.html
+       OUTGOING LINK: https://play.google.com/intl/en_us/about/device-terms.html
+       OUTGOING LINK: https://support.google.com/googleplay/bin/answer.py?answer=1196018&amp;hl=en
+       OUTGOING LINK: http://developer.android.com/index.html
+       OUTGOING LINK: https://play.google.com/artists
+LINKS FROM http://www.youtube.com/?hl=en&tab=i1
+       OUTGOING LINK: http://www.youtube.com/adblitz?feature=inp-lt-adb
+       OUTGOING LINK: https://accounts.google.com/ServiceLogin?service=youtube&amp;hl=en_US&amp;continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26hl%3Den_US%26next%3D%252F%253Ffeature%253Dsignin%26nomobiletemp%3D1&amp;uilel=3&amp;passive=true
+       OUTGOING LINK: http://www.google.com/intl/en/policies/privacy/
+       OUTGOING LINK: https://accounts.google.com/ServiceLogin?service=youtube&hl=en_US&continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26feature%3Dplaylist%26hl%3Den_US%26next%3D%252F%253Fhl%253Den%2526tab%253Di1%26nomobiletemp%3D1&uilel=3&passive=true
+       OUTGOING LINK: https://accounts.google.com/ServiceLogin?service=youtube&hl=en_US&continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26feature%3Dplaylist%26hl%3Den_US%26next%3D%252F%253Fhl%253Den%2526tab%253Di1%26nomobiletemp%3D1&uilel=3&passive=true
+LINKS FROM http://news.google.com/nwshp?hl=en&tab=in
+       OUTGOING LINK: http://www.google.com/webhp?hl=en&tab=nw
+       OUTGOING LINK: http://www.google.com/imghp?hl=en&tab=ni
+       OUTGOING LINK: http://maps.google.com/maps?hl=en&tab=nl
+       OUTGOING LINK: https://play.google.com/?hl=en&tab=n8
+       OUTGOING LINK: http://www.youtube.com/?tab=n1
+       OUTGOING LINK: https://mail.google.com/mail/?tab=nm
+       OUTGOING LINK: https://drive.google.com/?tab=no
+       OUTGOING LINK: http://www.google.com/intl/en/options/
+       OUTGOING LINK: http://www.google.com/history/optout?hl=en
+       OUTGOING LINK: https://www.google.com/accounts/ServiceLogin?service=news&passive=1209600&continue=http://news.google.com/nwshp?hl%3Den%26tab%3Din&followup=http://news.google.com/nwshp?hl%3Den%26tab%3Din&hl=en
+       OUTGOING LINK: http://support.google.com/news/bin/answer.py?hl=en&amp;answer=40237
+       OUTGOING LINK: http://www.cbsnews.com/8301-400_162-57567382/baltimore-qb-joe-flacco-wins-super-bowl-mvp-award/
+       OUTGOING LINK: http://www.usatoday.com/story/sports/nfl/2013/02/03/san-francisco-49ers-baltimore-ravens-harbaugh-duel/1888987/
+       OUTGOING LINK: http://www.reuters.com/article/2013/02/04/nfl-superbowl-lights-idUSL1N0B407E20130204
+       OUTGOING LINK: http://www.chicagotribune.com/sports/football/bears/ct-spt-0204-super-bowl--20130204,0,1871730.story
+       OUTGOING LINK: https://plus.google.com/111616434025797931601/posts
+       OUTGOING LINK: http://www.stltoday.com/sports/columns/bernie-miklasz/ravens-had-the-mo-joe/article_3973a587-5e17-58b1-ad1f-bfd38f7f6789.html
+       OUTGOING LINK: http://bostonherald.com/sports/patriots_nfl/nfl_coverage/2013/02/ravens_forever_more
+       OUTGOING LINK: http://live.jsonline.com/Event/Live_Super_Bowl_Blog_Baltimore_Ravens_vs_San_Francisco_49ers?Page=0
+       OUTGOING LINK: http://en.wikipedia.org/wiki/Super_Bowl_XLVII
+       OUTGOING LINK: http://espn.go.com/blog/nflnation/post/_/id/72170/five-yards-to-go-the-ravens-last-stand
+       OUTGOING LINK: http://espn.go.com/blog/nflnation/post/_/id/72170/five-yards-to-go-the-ravens-last-stand
+       OUTGOING LINK: http://www.nytimes.com/2013/02/04/sports/football/super-bowl-joe-flaccos-precision-typical-of-elite-quarterbacks.html
+       OUTGOING LINK: http://www.nytimes.com/2013/02/04/sports/football/super-bowl-joe-flaccos-precision-typical-of-elite-quarterbacks.html
+       OUTGOING LINK: http://sports.yahoo.com/news/nfl--lights-out-super-bowl--ravens-make-final-stand-to-beat-niners-for-nfl-title--034741080.html
+       OUTGOING LINK: http://sports.yahoo.com/news/nfl--lights-out-super-bowl--ravens-make-final-stand-to-beat-niners-for-nfl-title--034741080.html
+       OUTGOING LINK: http://sports.yahoo.com/blogs/nfl-shutdown-corner/john-jim-harbaugh-share-sweet-awkward-exchange-ravens-040235028--nfl.html
+       OUTGOING LINK: http://sports.yahoo.com/blogs/nfl-shutdown-corner/john-jim-harbaugh-share-sweet-awkward-exchange-ravens-040235028--nfl.html
+       OUTGOING LINK: http://abcnews.go.com/Sports/wireStory/lights-ravens-beat-49ers-34-31-super-bowl-18396865
+       OUTGOING LINK: http://abcnews.go.com/Sports/wireStory/lights-ravens-beat-49ers-34-31-super-bowl-18396865
+       OUTGOING LINK: http://www.chicagotribune.com/sports/football/bears/ct-spt-0204-super-bowl--20130204,0,1871730.story
+       OUTGOING LINK: http://www.chicagotribune.com/sports/football/bears/ct-spt-0204-super-bowl--20130204,0,1871730.story
+       OUTGOING LINK: http://www.cbsnews.com/8301-400_162-57567377/super-bowl-2013-ravens-withstand-49ers-rally-and-power-outage-surge-to-championship/
+       OUTGOING LINK: http://www.cbsnews.com/8301-400_162-57567377/super-bowl-2013-ravens-withstand-49ers-rally-and-power-outage-surge-to-championship/
+       OUTGOING LINK: http://www.nytimes.com/2013/02/04/sports/football/power-outage-in-superdome-delays-super-bowl.html
+       OUTGOING LINK: http://www.nytimes.com/2013/02/04/sports/football/power-outage-in-superdome-delays-super-bowl.html
+       OUTGOING LINK: http://abcnews.go.com/Sports/wireStory/lights-power-outage-stops-game-super-bowl-18395164
+       OUTGOING LINK: http://abcnews.go.com/Sports/wireStory/lights-power-outage-stops-game-super-bowl-18395164
+       OUTGOING LINK: http://www.cbsnews.com/8301-400_162-57567382/baltimore-qb-joe-flacco-wins-super-bowl-mvp-award/
+       OUTGOING LINK: http://www.cbsnews.com/8301-400_162-57567382/baltimore-qb-joe-flacco-wins-super-bowl-mvp-award/
+       OUTGOING LINK: http://sports.yahoo.com/blogs/nfl-shutdown-corner/joe-flacco-validates-himself-super-bowl-mvp-award-035953835--nfl.html
+       OUTGOING LINK: http://sports.yahoo.com/blogs/nfl-shutdown-corner/joe-flacco-validates-himself-super-bowl-mvp-award-035953835--nfl.html
+       OUTGOING LINK: http://espn.go.com/new-york/nfl/story/_/id/8911864/2013-super-bowl-power-outage-stops-game-super-bowl-xlvii
+       OUTGOING LINK: http://espn.go.com/new-york/nfl/story/_/id/8911864/2013-super-bowl-power-outage-stops-game-super-bowl-xlvii
+       OUTGOING LINK: http://sports.yahoo.com/blogs/nfl-shutdown-corner/colin-kaepernick-chance-pull-off-game-winning-drive-034047259--nfl.html
+       OUTGOING LINK: http://sports.yahoo.com/blogs/nfl-shutdown-corner/colin-kaepernick-chance-pull-off-game-winning-drive-034047259--nfl.html
+       OUTGOING LINK: http://sports.yahoo.com/blogs/nfl-shutdown-corner/baltimore-ravens-win-super-bowl-xlvii-035239410--nfl.html
+       OUTGOING LINK: http://sports.yahoo.com/blogs/nfl-shutdown-corner/baltimore-ravens-win-super-bowl-xlvii-035239410--nfl.html
+       OUTGOING LINK: http://www.usatoday.com/story/gameon/2013/02/03/superdome-black-out-super-bowl-xlvii/1889009/
+       OUTGOING LINK: http://www.usatoday.com/story/gameon/2013/02/03/superdome-black-out-super-bowl-xlvii/1889009/
+       OUTGOING LINK: http://sports.yahoo.com/blogs/nfl-shutdown-corner/power-outage-super-bowl-adds-unexpected-element-big-014914888--nfl.html
+       OUTGOING LINK: http://sports.yahoo.com/blogs/nfl-shutdown-corner/power-outage-super-bowl-adds-unexpected-element-big-014914888--nfl.html
+       OUTGOING LINK: http://blog.chron.com/ultimatetexans/2013/02/ravens-survive-wild-finish-to-claim-second-super-bowl-title/
+       OUTGOING LINK: http://blog.chron.com/ultimatetexans/2013/02/ravens-survive-wild-finish-to-claim-second-super-bowl-title/
+       OUTGOING LINK: http://msn.foxsports.com/nfl/story/super-bowl-xlvii-power-goes-out-at-superdome-020313
+       OUTGOING LINK: http://msn.foxsports.com/nfl/story/super-bowl-xlvii-power-goes-out-at-superdome-020313
+       OUTGOING LINK: http://www.nytimes.com/2013/02/04/sports/football/super-bowl-for-jacoby-jones-trip-home-and-2-trips-into-end-zone.html
+       OUTGOING LINK: http://www.nytimes.com/2013/02/04/sports/football/super-bowl-for-jacoby-jones-trip-home-and-2-trips-into-end-zone.html
+       OUTGOING LINK: http://www.cbssports.com/nfl/blog/eye-on-football/21633436/super-bowl-grades-power-outage-gives-game-new-life
+       OUTGOING LINK: http://www.cbssports.com/nfl/blog/eye-on-football/21633436/super-bowl-grades-power-outage-gives-game-new-life
+       OUTGOING LINK: http://business.time.com/2013/01/31/super-bowl-sunday-what-were-eating-where-were-watching-how-much-were-spending/
+       OUTGOING LINK: http://www.huffingtonpost.com/2013/02/04/oh-the-drama-super-ads-go_n_2613253.html
+       OUTGOING LINK: http://www.nytimes.com/2013/02/04/business/media/super-bowl-commercials-relied-on-outdated-ad-tactics.html
+       OUTGOING LINK: http://www.nydailynews.com/entertainment/tv-movies/best-worst-super-bowl-ads-article-1.1254564
+       OUTGOING LINK: http://www.post-gazette.com/stories/ae/tv-radio/tuned-in-super-bowl-ads-largely-disappoint-673351/
+       OUTGOING LINK: http://en.wikipedia.org/wiki/Super_Bowl_advertising
+       OUTGOING LINK: http://www.news.com.au/news/tour-bus-crashes-east-of-la-leaving-some-dead-and-others-injured/story-fnejlrpu-1226570212988
+       OUTGOING LINK: http://latimesblogs.latimes.com/lanow/2013/02/at-least-8-dead-more-than-20-hurt-in-tour-bus-crash.html
+       OUTGOING LINK: http://abcnews.go.com/US/wireStory/tour-bus-overturns-east-la-multiple-deaths-18396442
+       OUTGOING LINK: http://www.reuters.com/article/2013/02/04/usa-crash-calfornia-idUSL1N0B40BM20130204
+       OUTGOING LINK: http://www.necn.com/02/04/13/Update-on-the-latest-news-sports-busines/landing_nation.html?&amp;apID=448d00ac134b4441bbb00eff373934da
+       OUTGOING LINK: http://www.nydailynews.com/entertainment/music-arts/beyonce-rocks-super-bowl-halftime-show-destiny-child-article-1.1254476?localLinksEnabled=false
+       OUTGOING LINK: http://www.nytimes.com/2013/02/04/sports/football/beyonce-brings-intensity-to-halftime-show-and-silences-doubters.html
+       OUTGOING LINK: http://abcnews.go.com/Entertainment/wireStory/keys-sings-national-anthem-piano-super-bowl-18393864
+       OUTGOING LINK: http://www.hollywoodreporter.com/news/beyonce-tour-dates-mrs-carter-417748
+       OUTGOING LINK: http://www.chicagotribune.com/entertainment/music/turnitup/chi-beyonce-halftime-show-super-bowl-20130203,0,6303632.column
+       OUTGOING LINK: http://en.wikipedia.org/wiki/Bootylicious
+       OUTGOING LINK: http://timesofindia.indiatimes.com/tech/tech-news/hardware/BlackBerry-10-What-BlackBerry-needs-to-do-in-India/articleshow/18329397.cms
+       OUTGOING LINK: http://news.cnet.com/8301-17852_3-57567371-71/that-cant-have-been-blackberrys-super-bowl-ad-can-it/
+       OUTGOING LINK: https://plus.google.com/107072035581218462658/posts
+       OUTGOING LINK: https://plus.google.com/107072035581218462658/posts
+       OUTGOING LINK: http://online.wsj.com/article/SB10001424127887323701904578276102193619618.html?mod=googlenews_wsj
+       OUTGOING LINK: https://plus.google.com/106866314115446788652/posts
+       OUTGOING LINK: http://exitevent.com/blackberrys-new-coat-of-paint-1324.asp
+       OUTGOING LINK: https://plus.google.com/102859100854481091325/posts
+       OUTGOING LINK: http://www.reuters.com/article/2013/02/03/blackberry-asia-idUSL4N0B304P20130203
+       OUTGOING LINK: http://www.brecorder.com/markets/fxmm/asia/104415.html
+       OUTGOING LINK: http://online.wsj.com/article/SB10001424127887324445904578283020692754346.html?mod=googlenews_wsj
+       OUTGOING LINK: http://www.actionforex.com/analysis/daily-forex-fundamentals/usd%10jpy:-central-bank-aims-to-defeat-deflation,-indicates-taro-aso-20130204183287/
+       OUTGOING LINK: http://www.bloomberg.com/news/2013-02-03/japan-finance-minister-models-policy-after-1930s-stimulus.html
+       OUTGOING LINK: http://www.washingtonpost.com/opinions/robert-samuelson-japans-self-defeating-stimulus-cycle/2013/02/03/6c3ba148-6c9b-11e2-bd36-c0fe61a205f6_story.html
+       OUTGOING LINK: http://www.reuters.com/article/2013/02/04/us-markets-forex-idUSBRE9070IW20130204
+       OUTGOING LINK: http://www.google.com/accounts/Login?hl=en&skipvpage=true&sendvemail=false&continue=http://news.google.com/news?hl%3Den%26tab%3Din%26pz%3D1%26cf%3Dall%26ned%3Dus%26q
+       OUTGOING LINK: http://www.ndtv.com/article/world/bashar-al-assad-says-syria-can-confront-threats-after-israel-attack-325915
+       OUTGOING LINK: http://world.time.com/2013/02/03/israel-suggests-responsibility-for-syria-airstrike/
+       OUTGOING LINK: http://www.foxnews.com/world/2013/02/03/israel-suggests-responsibility-for-airstrike-on-syria/
+       OUTGOING LINK: http://www.nytimes.com/2013/02/04/world/middleeast/syrian-weapons-center-said-to-be-damaged.html
+       OUTGOING LINK: http://www.haaretz.com/news/diplomacy-defense/assad-discusses-israeli-attack-with-iran-syria-can-confront-any-threats.premium-1.501134
+       OUTGOING LINK: http://www.washingtonpost.com/world/middle_east/israel-hints-at-responsibility-for-airstrike-in-syria/2013/02/03/4cfb93c0-6e02-11e2-b35a-0ee56f0518d2_story.html
+       OUTGOING LINK: http://www.bbc.co.uk/news/world-asia-21318597
+       OUTGOING LINK: http://www.bbc.co.uk/news/world-asia-21318597
+       OUTGOING LINK: http://www.chron.com/news/world/article/SKorea-US-begin-drills-amid-NKorea-nuclear-threat-4246428.php
+       OUTGOING LINK: http://www.telegraph.co.uk/news/worldnews/asia/northkorea/9846447/North-Korea-preparing-for-two-nuclear-tests.html
+       OUTGOING LINK: http://online.wsj.com/article/SB10001424127887324610504578277851504749598.html?mod=googlenews_wsj
+       OUTGOING LINK: http://www.cnn.com/2013/02/03/world/asia/south-koreans-opinion-nuclear-test/index.html
+       OUTGOING LINK: http://online.wsj.com/article/SB10001424127887324445904578281322981014036.html
+       OUTGOING LINK: http://online.wsj.com/article/SB10001424127887324445904578281322981014036.html
+       OUTGOING LINK: http://www.cnn.com/2013/02/03/world/europe/germany-iran-nuclear-talks/index.html
+       OUTGOING LINK: http://www.bloomberg.com/news/2013-02-03/iran-welcomes-u-s-offer-sees-feb-25-atomic-talks-with-powers.html
+       OUTGOING LINK: https://plus.google.com/113517477624564461585/posts
+       OUTGOING LINK: http://tehrantimes.com/politics/105374-iran-will-positively-consider-us-proposal-for-direct-talks-fm
+       OUTGOING LINK: http://www.dw.de/biden-offers-iran-direct-talks-calls-for-trans-atlantic-free-trade/a-16571444
+       OUTGOING LINK: http://www.cbsnews.com/8301-202_162-57567330/suicide-bomber-kills-15-in-northern-iraq/
+       OUTGOING LINK: http://news.xinhuanet.com/english/world/2013-02/03/c_132148267.htm
+       OUTGOING LINK: http://www.nytimes.com/2013/02/04/world/middleeast/suicide-attack-kills-dozens-in-northern-iraq.html
+       OUTGOING LINK: http://www.irishtimes.com/newspaper/world/2013/0204/1224329604972.html
+       OUTGOING LINK: http://www.bbc.co.uk/news/world-middle-east-21311931
+       OUTGOING LINK: http://www.iol.co.za/news/world/kirkuk-rocked-by-suicide-bombing-1.1463334
+       OUTGOING LINK: http://www.nydailynews.com/news/national/american-sniper-author-chris-kyle-fatally-shot-article-1.1254181
+       OUTGOING LINK: http://www.nydailynews.com/news/national/american-sniper-author-chris-kyle-fatally-shot-article-1.1254181
+       OUTGOING LINK: http://www.freep.com/article/20130204/NEWS07/302040019/Vet-charged-with-killing-American-Sniper-author-Chris-Kyle-friend
+       OUTGOING LINK: http://www.latimes.com/news/nationworld/nation/la-na-kyle-killing-20130204,0,4130030.story
+       OUTGOING LINK: http://abcnews.go.com/US/seal-chris-kyle-allegedly-killed-marine/story?id=18389238
+       OUTGOING LINK: http://en.wikipedia.org/wiki/Chris_Kyle
+       OUTGOING LINK: http://abcnews.go.com/US/wireStory/harvard-visit-dozens-injured-bus-crash-18397029
+       OUTGOING LINK: http://abcnews.go.com/US/wireStory/harvard-visit-dozens-injured-bus-crash-18397029
+       OUTGOING LINK: http://www.necn.com/02/03/13/Pa-high-school-students-injured-in-Bosto/landing.html?blockID=828869&amp;feedID=11106
+       OUTGOING LINK: http://www1.whdh.com/news/articles/local/12009763252179/driver-in-bus-crash-will-likely-be-cited/
+       OUTGOING LINK: http://www.washingtonpost.com/national/charter-bus-hits-overpass-in-boston-injuring-unknown-number-of-passengers-some-trapped/2013/02/02/4f07425c-6da5-11e2-8f4f-2abd96162ba8_story.html
+       OUTGOING LINK: http://fox13now.com/2013/02/03/woman-in-critical-condition-after-3-car-wreck/
+       OUTGOING LINK: http://www.deseretnews.com/article/865572187/Driver-injured-after-truck-collides-with-airplane-at-Salt-Lake-City-airport.html
+       OUTGOING LINK: http://www.standard-journal.com/news/news_ap/article_e29485b0-a099-508f-aab6-357b653ae901.html
+       OUTGOING LINK: http://www.upi.com/Top_News/US/2013/02/03/Truck-hits-parked-cargo-plane-in-Utah/UPI-44941359952437/
+       OUTGOING LINK: http://www.cbsnews.com/8301-504083_162-57567008-504083/alabama-standoff-continues-with-gunman-suspected-of-killing-bus-driver-kidnapping-boy-5/
+       OUTGOING LINK: http://www.latimes.com/news/nationworld/nation/la-na-alabama-standoff-20130204,0,1477539.story
+       OUTGOING LINK: http://www.google.com/hostednews/afp/article/ALeqM5jg1AvH7ZTImmiUk0yuR_edU8-RdQ?docId=CNG.1b42b383631cf67f0e4f0ad04c39ad47.491
+       OUTGOING LINK: http://www.northescambia.com/2013/02/escambia-bus-drivers-attend-funeral-of-slain-alabama-driver
+       OUTGOING LINK: http://www.nytimes.com/2013/02/04/us/service-held-for-school-bus-driver-in-alabama.html
+       OUTGOING LINK: http://www.northjersey.com/news/Panetta_says_politics_at_play_in_Hagel_questioning.html
+       OUTGOING LINK: http://www.post-gazette.com/stories/opinion/editorials/confirm-hagel-at-a-bumpy-hearing-he-showed-knowledge-and-grit-673287/
+       OUTGOING LINK: http://www.studentnewsie.com/chuck-hagel-barrage-of-criticism-at-confirmation-16480/
+       OUTGOING LINK: http://www.guardian.co.uk/world/2013/feb/03/leon-panetta-defends-chuck-hagel
+       OUTGOING LINK: http://www.usatoday.com/story/opinion/2013/02/03/chuck-hagel-congressional-hearing/1889195/
+       OUTGOING LINK: http://nbcpolitics.nbcnews.com/_news/2013/02/03/16826953-panetta-comes-to-hagels-defense-after-nominees-difficult-confirmation-hearing?lite
+       OUTGOING LINK: http://www.thestandard.com.hk/news_detail.asp?pp_cat=5&amp;art_id=130752&amp;sid=38886078&amp;con_type=1
+       OUTGOING LINK: http://www.bloomberg.com/news/2013-02-04/china-services-industries-grow-as-retailing-boosts-recovery-1-.html
+       OUTGOING LINK: http://www.economicpopulist.org/content/ism-manufacturing-index-pmi-531-january-2013
+       OUTGOING LINK: http://www.taipeitimes.com/News/biz/archives/2013/02/04/2003554162
+       OUTGOING LINK: http://www.cnbc.com/id/100430287
+       OUTGOING LINK: http://www.sfgate.com/business/bloomberg/article/No-Bear-Market-for-Treasuries-After-Worst-Start-4247877.php
+       OUTGOING LINK: http://www.seacoastonline.com/articles/20130203-BIZ-302030321
+       OUTGOING LINK: http://online.wsj.com/article/SB10001424127887324610504578278103941802518.html?mod=googlenews_wsj
+       OUTGOING LINK: http://www.bloomberg.com/news/2013-02-04/treasuries-decline-after-u-s-jobs-china-services.html
+       OUTGOING LINK: http://www.cbsnews.com/8301-34227_162-57567327/dow-14000-stocks-near-new-crest/
+       OUTGOING LINK: http://www.cbsnews.com/8301-34227_162-57567327/dow-14000-stocks-near-new-crest/
+       OUTGOING LINK: https://plus.google.com/101837244581366427027/posts
+       OUTGOING LINK: https://plus.google.com/101837244581366427027/posts
+       OUTGOING LINK: http://www.thefiscaltimes.com/Columns/2013/02/04/Dow-14000-Are-Stocks-Expensive-Now.aspx
+       OUTGOING LINK: http://natmonitor.com/2013/02/03/dow-surges-above-14000-for-first-time-since-2007/
+       OUTGOING LINK: http://www.bloomberg.com/news/2013-02-01/u-s-stock-index-futures-advance-before-employment-report.html
+       OUTGOING LINK: http://www.cbsnews.com/8301-205_162-57567262/twitter-250000-users-data-compromised-in-hacking-attacks/
+       OUTGOING LINK: http://online.wsj.com/article/SB10001424127887323701904578278620588757006.html
+       OUTGOING LINK: http://securitywatch.pcmag.com/none/307708-twitter-breached-attackers-stole-250-000-user-data
+       OUTGOING LINK: http://abcnews.go.com/Technology/wireStory/twitter-hackers-compromise-250k-accounts-18382090
+       OUTGOING LINK: http://bits.blogs.nytimes.com/2013/02/01/twitter-hacked-data-for-250000-users-stolen/
+       OUTGOING LINK: http://www.zdnet.com/microsoft-surface-with-windows-rt-tablet-sales-disappoint-in-fourth-quarter-7000010688/
+       OUTGOING LINK: http://www.zdnet.com/microsoft-surface-with-windows-rt-tablet-sales-disappoint-in-fourth-quarter-7000010688/
+       OUTGOING LINK: https://plus.google.com/112532081027616221801/posts
+       OUTGOING LINK: https://plus.google.com/112532081027616221801/posts
+       OUTGOING LINK: http://news.cnet.com/8301-10805_3-57567343-75/microsofts-surface-pro-pops-on-best-buy/
+       OUTGOING LINK: http://www.channelregister.co.uk/2013/01/31/surface_sales_fail_to_impress/
+       OUTGOING LINK: http://www.engadget.com/2013/02/03/surface-pro-shows-up-in-some-retail-stores/
+       OUTGOING LINK: http://www.infoworld.com/t/tablets/no-microsoft-didnt-sell-900000-surface-rt-tablets-212053
+       OUTGOING LINK: https://plus.google.com/107161761287145163428/posts
+       OUTGOING LINK: http://abcnews.go.com/blogs/business/2013/02/controversial-volkswagen-super-bowl-ad-gets-viewer-approval/
+       OUTGOING LINK: http://www.huffingtonpost.com/2013/02/03/volkswagen-super-bowl-commercial-2013-jamaican-accent-racist_n_2612457.html
+       OUTGOING LINK: http://www.ftleavenworthlamp.com/article/20130203/NEWS/302039963
+       OUTGOING LINK: http://www.dailyastorian.com/news/nation_world/celebs-babies-beer-its-super-bowl-ad-time/image_736ed7dc-b6e2-5d01-b686-50a7f66f9f00.html/?mode=gallery
+       OUTGOING LINK: http://herocomplex.latimes.com/2013/02/03/iron-man-3-super-bowl-spot-leads-pack-of-disneys-latest-marvels/
+       OUTGOING LINK: http://herocomplex.latimes.com/2013/02/03/iron-man-3-super-bowl-spot-leads-pack-of-disneys-latest-marvels/
+       OUTGOING LINK: http://www.mtv.com/news/articles/1701283/iron-man-3-super-bowl-game-day-spot.jhtml
+       OUTGOING LINK: https://plus.google.com/108029912411087424550/posts
+       OUTGOING LINK: http://www.dailymail.co.uk/tvshowbiz/article-2273095/Super-Bowl-2013-Robert-Downey-Jr-reprises-role-Iron-Man-3-new-extended-trailer-released.html?ito=feeds-newsxml
+       OUTGOING LINK: http://insidemovies.ew.com/2013/02/01/robert-downey-jr-iron-man-2-flaws-part-4-of-5/
+       OUTGOING LINK: https://plus.google.com/113325788766951603516/posts
+       OUTGOING LINK: http://en.wikipedia.org/wiki/Super_Bowl_XLVII
+       OUTGOING LINK: http://online.wsj.com/article/SB10001424127887324761004578281812024380342.html?mod=googlenews_wsj
+       OUTGOING LINK: http://online.wsj.com/article/SB10001424127887324761004578281812024380342.html?mod=googlenews_wsj
+       OUTGOING LINK: http://www.huffingtonpost.com/2013/02/03/taco-bell-super-bowl-commercial_n_2612714.html
+       OUTGOING LINK: http://blogs.suntimes.com/tv/2013/02/super_bowl_commercials_best_an.html
+       OUTGOING LINK: http://www.newsday.com/sports/football/super-bowl/super-bowl-ads-the-best-and-worst-including-samsung-chrysler-taco-bell-1.4557141
+       OUTGOING LINK: http://www.mtv.com/news/articles/1701281/fast-six-super-bowl-trailer.jhtml

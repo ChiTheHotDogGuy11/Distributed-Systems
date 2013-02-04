@@ -42,6 +42,7 @@ public class ProcessRunner {
 				while(running) {
 					if (processes.size() > 0) {
 						MigratableProcessWrapper cur = processes.get(0);
+
 						try {
 							cur.start();
 							cur.getThread().join();

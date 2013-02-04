@@ -66,7 +66,6 @@ public class WebCrawler implements MigratableProcess {
 			outFile = new TransactionalFileOutputStream(targetFilename, false);
 			suspending = false;
 		} catch (MalformedURLException e) {
-			// TODO Auto-generated catch block
 			System.out.println("ERROR: Invalid url");
 			System.out.println("WebCrawler usage: $startingURL $targetFilename");
 			validArgs = false;
@@ -85,7 +84,6 @@ public class WebCrawler implements MigratableProcess {
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
@@ -126,7 +124,7 @@ public class WebCrawler implements MigratableProcess {
 							newLink = newLink.replace("\"", "");
 							try {
 								linksToCheck.enqueue(new URL(newLink));
-								outStream.println("OUTGOING LINK: " + newLink);
+								outStream.println("       OUTGOING LINK: " + newLink);
 							}
 							catch (MalformedURLException e) {
 							}
