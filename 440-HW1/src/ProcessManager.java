@@ -7,16 +7,33 @@ import java.lang.reflect.InvocationTargetException;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
+/** ProcessManager
+ * 
+ * Main ProcessManager class
+ * Creates a command prompt to accept commands
+ * Migrates processes
+ * @author Tyler Healy (thealy)
+ */
 public class ProcessManager {
 	
+	//Boolean to indicate whether this process manager is a master
 	private boolean isMaster = true;
+	
+	//Boolean to indicate if this process manager is running
 	private boolean isRunning = true;
+	
+	//Slave or Master objects
 	private SocketWrapper sck = null;
 	private ServerSocketWrapper server = null;
 	private ProcessRunner pr = null;
 	private LoadManager lm = null;
 	private SlaveListener sl = null;
 	
+	/** migrate() 
+	 * 
+	 * Sends a process from a slave ProcessManager to a master
+	 * @throws IOException
+	 */
 	public void migrate() throws IOException {
 		MigratableProcessWrapper processToMigrate = pr.getLast();
 		sck.getOut().writeObject(processToMigrate.getName());
@@ -24,11 +41,19 @@ public class ProcessManager {
         sck.getOut().writeObject(processToMigrate.getProcess());
 	}
 	
+	/** acceptProcess(String command, String args)
+	 * 
+	 * Creates an instance of a process from a string command
+	 * @param command - name of the process
+	 * @param args - array of string arguments
+	 * @return
+	 */
 	public MigratableProcessWrapper acceptProcess(String command, String[] args) {
 		Class<?> processClass = null;
 		Constructor<?> processCtr = null;
 		MigratableProcessWrapper mpw = null;
 		
+		//Determine if there is a class for the command
 		try {
 			processClass = Class.forName(command);
 		} catch (ClassNotFoundException e) {
@@ -36,6 +61,7 @@ public class ProcessManager {
 			return null;
 		}
 		
+		//Get the constructor of the class
 		try {
 			processCtr = processClass.getConstructor(String[].class);
 		} catch (SecurityException e) {
@@ -44,6 +70,7 @@ public class ProcessManager {
 			e.printStackTrace();
 		}
 		
+		//Create a MigratableProcessWrapper with an instance of the class
 		try {
 			Object[] initArgs = new Object[1];
 			initArgs[0] = args;
@@ -61,6 +88,11 @@ public class ProcessManager {
 		return mpw;
 	}
 	
+	/** receiveCommands()
+	 * 
+	 * Runs the command prompt
+	 * @throws Exception
+	 */
 	public void receiveCommands() throws Exception {
 		String result = "";
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -77,10 +109,21 @@ public class ProcessManager {
 		}
 	}
 	
+	/** parseCommand(String command)
+	 * 
+	 * Parses the given request
+	 * @param command - String input command
+	 */
 	public void parseCommand(String command) {
+		//Split command based on space
 		String[] words = command.split(" ");
+		
+		//First word is the process/command
 		String com = words[0];
+		
+		//Remaining words are process arguments
 		String[] args = new String[words.length - 1];
+		
 		MigratableProcessWrapper mpw = null;
 		
 		for (int i = 1; i < words.length; i++) {
@@ -88,16 +131,20 @@ public class ProcessManager {
 		}
 		
 		if (com.equals("-c") && args.length == 1) {
+			//Connect as slave command
 			if (isMaster) {
 			  connectAssSlave(args[0]);
 			} else {
 				System.out.println("Already connected as slave");
 			}
 		} else if (com.equals("ps") && words.length == 1) {
+			//Print processes command
 			pr.printProcesses();
 		} else if (com.equals("quit") && words.length == 1) {
+			//Quits the ProcessManager
 			quitPM();
 		} else {
+			//Attempts to start a process with the command
 			if((mpw = acceptProcess(com, args)) != null) {
 				mpw.setName(command);
 				addProcess(mpw);
@@ -105,10 +152,21 @@ public class ProcessManager {
 		}
 	}
 	
+	/** addProcess(MigratableProcessWrapper newProcess) 
+	 * 
+	 * Adds a new process to the ProcessRunner
+	 * @param newProcess
+	 */
 	public void addProcess(MigratableProcessWrapper newProcess) {
 		pr.addThread(newProcess);
 	}
 	
+	/** connectAssSlave(String hostname)
+	 * 
+	 * Creates a socket connection (in a SocketWrapper) between this
+	 * ProcessManager and a master ProcessManager
+	 * @param hostname
+	 */
 	public void connectAssSlave(String hostname) {
 		String[] hostArray = hostname.split(":");
 		
@@ -146,6 +204,10 @@ public class ProcessManager {
 		}
 	}
 	
+	/** quitPM()
+	 * 
+	 * Quits the process manager
+	 */
 	public void quitPM() {
 		/*if (sck != null) {
 			try {
@@ -162,6 +224,10 @@ public class ProcessManager {
 		System.exit(1);
 	}
 	
+	/** getNumProcesses()
+	 * 
+	 * @return the number of processes running on this ProcessManager
+	 */
 	public int getNumProcesses() {
 		return pr.getSize();
 	}

@@ -108,12 +108,13 @@ public class ProcessRunner {
 	 * @return the last Thread in the list being managed by the ProcessRunner
 	 */
 	public synchronized MigratableProcessWrapper getLast() {
-		if (processes.size() == 0) {
+		int size;
+		if ((size = processes.size()) == 0) {
 			return null;
 		} 
 		
-		processes.get(0).stop();
-		return processes.get(0).getMPW();
+		processes.get(size - 1).stop();
+		return processes.get(size - 1).getMPW();
 	}
 	
 	/** getSize()
