@@ -1,10 +1,4 @@
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.PrintWriter;
-import java.net.Socket;
 import java.util.ArrayList;
 
 
@@ -43,21 +37,23 @@ public class LoadManager {
 			public void run() {
 				running = true;
 				while(running) {
-					ArrayList<Socket> connections = ssw.getScokets();
-					PrintWriter out = null;
-					BufferedReader in = null;
+					ArrayList<SocketWrapper> connections = ssw.getScokets();
+					int size;
 					
-					if (connections != null && connections.size() > 0) {
+					if (connections != null && (size = connections.size()) > 0) {
 						int[] numProcesses = new int[connections.size()];
 						for (int i = 0; i < connections.size(); i++) {
-							Socket cur = connections.get(i);
+							SocketWrapper cur = connections.get(i);
 							if (!cur.isClosed()) {
 								try {
-									out = new PrintWriter(cur.getOutputStream(), true);
-									in = new BufferedReader(new InputStreamReader(cur.getInputStream()));
-									out.println("NumProcesses?");
-									String response = in.readLine();
-									numProcesses[i] = Integer.parseInt(response);
+									cur.getOut().writeObject("NumProcesses?");
+									Object response = null;
+									try {
+										response = cur.getIn().readObject();
+									} catch (ClassNotFoundException e) {
+										e.printStackTrace();
+									}
+									numProcesses[i] = (Integer) response;
 								} catch (IOException e) {
 									e.printStackTrace();
 								}
@@ -69,29 +65,28 @@ public class LoadManager {
 							sum += numProcesses[i];
 						}
 						int avg = ((sum - 1) / numProcesses.length) + 1;
-						ArrayList<MigratableProcess> migrations = new ArrayList<MigratableProcess>();
+						ArrayList<MigratableProcessWrapper> migrations = new ArrayList<MigratableProcessWrapper>();
 						for (int i = 0; i < connections.size(); i++) {
-							Socket cur = connections.get(i);
+							SocketWrapper cur = connections.get(i);
 							if (!cur.isClosed()) {
 								int over = numProcesses[i] - avg;
-								if (over > 0) {
-									out.println("migrate " + over);
-								}
 								for(int j = 1; j <= over; j++) {
-									ObjectInputStream oin;
-									MigratableProcess obj = null;
+									Object nm = null;
+									Object obj = null;
 									try {
-										oin = new ObjectInputStream(cur.getInputStream());
-										obj = (MigratableProcess) oin.readObject();
-										oin.close();
+										cur.getOut().writeObject("migrate");
+										nm = cur.getIn().readObject();
+										obj = cur.getIn().readObject();
 									} catch (IOException e) {
 										e.printStackTrace();
 									} catch (ClassNotFoundException e) {
 										e.printStackTrace();
 									}
 									
-									if (obj != null) {
-										migrations.add(obj);
+									if (nm != null && obj != null) {
+										MigratableProcessWrapper mpw = new MigratableProcessWrapper((MigratableProcess) obj);
+										mpw.setName((String) nm);
+										migrations.add(mpw);
 									}
 								}
 							}
@@ -109,13 +104,11 @@ public class LoadManager {
 								}
 							}
 							
-							ObjectOutputStream ob_out = null;
-							Socket cur = connections.get(low_j);
+							SocketWrapper cur = connections.get(low_j);
 							
 							if (!cur.isClosed()) {
 								try {
-									ob_out = new ObjectOutputStream(cur.getOutputStream());
-									ob_out.writeObject(migrations.get(i));
+									cur.getOut().writeObject(migrations.get(i));
 								} catch (IOException e) {
 									e.printStackTrace();
 								}

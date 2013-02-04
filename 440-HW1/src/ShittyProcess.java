@@ -1,15 +1,16 @@
 public class ShittyProcess implements MigratableProcess {
 
 	private volatile boolean suspending;
+	private int i;
 	
 	public ShittyProcess(String args[]) {
-		
+		i = 0;
 	}
 	
 	@Override
 	public void run() {
-		int i = 0;
 		while (!suspending) { 
+			System.out.println(i);
 			Fib(i++);
 			if (i > 45) {
 				break;

@@ -1,8 +1,6 @@
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.ObjectInputStream;
-import java.io.PrintWriter;
+import java.io.ObjectOutputStream;
 import java.net.Socket;
 
 public class SlaveListener {
@@ -13,10 +11,10 @@ public class SlaveListener {
 	//boolean that determines whether the main thread should run
     private volatile boolean running;
     
-    private Socket sck;
+    private SocketWrapper sck;
     private ProcessManager pm;
     
-    public SlaveListener(Socket sck, ProcessManager pm) {
+    public SlaveListener(SocketWrapper sck, ProcessManager pm) {
     	this.sck = sck;
     	this.pm = pm;
     }
@@ -36,46 +34,30 @@ public class SlaveListener {
 				running = true;
 				while(running) {
 					if (!sck.isClosed()) {
-						PrintWriter out = null;
-						BufferedReader in = null;
-						ObjectInputStream oin = null;
-						String request = "";
+						Object request = null;
 						
 						try {
-							out = new PrintWriter(sck.getOutputStream(), true);
-							in = new BufferedReader(new InputStreamReader(sck.getInputStream()));
-							request = in.readLine();
+							request = sck.getIn().readObject();
 						} catch (IOException e) {
+							e.printStackTrace();
+						} catch (ClassNotFoundException e) {
 							e.printStackTrace();
 						}
 						
 						if (request.equals("NumProcesses?")) {
-							out.println(pm.getNumProcesses());
-						} else if (request.equals("incoming")) {
-							MigratableProcess newProcess = null;
-							MigratableProcessWrapper mpw = null;
 							try {
-								oin = new ObjectInputStream(sck.getInputStream());
-								newProcess = (MigratableProcess) oin.readObject();
-								mpw = new MigratableProcessWrapper(newProcess);
-								pm.addProcess(mpw);
+								sck.getOut().writeObject(pm.getNumProcesses());
 							} catch (IOException e) {
 								e.printStackTrace();
-							} catch (ClassNotFoundException e) {
+							}
+						} else if (request.equals("migrate")) {
+							try {
+								pm.migrate();
+							} catch (IOException e) {
 								e.printStackTrace();
 							}
 						} else {
-							try { 
-								String[] reqArray = request.split(" ");
-								if (reqArray.length == 2 && reqArray[0].equals("migrate")) {
-									int over = Integer.parseInt(reqArray[1]);
-									for (int i = 0; i < over; i++) {
-											pm.migrate();
-									}
-								}
-							} catch (IOException e) {
-								e.printStackTrace();
-							}
+							pm.addProcess((MigratableProcessWrapper) request);
 						}
 					}
 				}

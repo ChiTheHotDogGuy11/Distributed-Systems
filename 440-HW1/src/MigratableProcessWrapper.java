@@ -1,5 +1,6 @@
+import java.io.Serializable;
 
-public class MigratableProcessWrapper {
+public class MigratableProcessWrapper implements Serializable {
 
 	//Thread in which the process will be run
 	private Thread thread;

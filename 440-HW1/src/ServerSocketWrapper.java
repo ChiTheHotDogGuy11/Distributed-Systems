@@ -23,7 +23,7 @@ public class ServerSocketWrapper {
     private volatile boolean running;
     
     //List of connections made to the master ProcessManager
-    private ArrayList<Socket> sockets = new ArrayList<Socket>();
+    private ArrayList<SocketWrapper> sockets = new ArrayList<SocketWrapper>();
     
     //port, backlog for the Socket connection
     private int port;
@@ -63,7 +63,7 @@ public class ServerSocketWrapper {
 				running = true;
 				while(running) {
 					try {
-						sockets.add(server.accept());
+						sockets.add(new SocketWrapper(server.accept()));
 					} catch (IOException e) { }
 				}
 			}
@@ -94,7 +94,7 @@ public class ServerSocketWrapper {
 	 * 
 	 * @return a list of the connections to the master ProcessManager
 	 */
-	public synchronized ArrayList<Socket> getScokets() {
+	public synchronized ArrayList<SocketWrapper> getScokets() {
 		return sockets;
 	}
 }

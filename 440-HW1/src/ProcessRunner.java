@@ -16,7 +16,7 @@ public class ProcessRunner {
 	private Thread thread;
 	
 	//List of threads being managed by the ProcessManager
-	private ArrayList<MigratableProcessWrapper> processes = new ArrayList<MigratableProcessWrapper>();
+	private ArrayList<ProcessChild> processes = new ArrayList<ProcessChild>();
 	
 	/** start()
 	 * 
@@ -40,17 +40,14 @@ public class ProcessRunner {
 			public void run() {
 				running = true;
 				while(running) {
-					if (processes.size() > 0) {
-						MigratableProcessWrapper cur = processes.get(0);
-
-						try {
-							cur.start();
-							cur.getThread().join();
-						} catch (Exception e1) {
-							e1.printStackTrace();
+					for (int i = 0; i < processes.size(); i++) {
+						ProcessChild cur = processes.get(i);
+						if (cur.isComplete()) {
+							System.out.println(cur.getMPW().getName() + " has terminated");
+							processes.remove(i);
+						} else if (cur.isTerminated()) {
+							processes.remove(i);
 						}
-						System.out.println(cur.getName() + " has terminated");
-						processes.remove(0);
 					}
 				}
 			}
@@ -78,7 +75,13 @@ public class ProcessRunner {
 	 * @param t - Thread to be added to the list
 	 */
 	public synchronized void addThread(MigratableProcessWrapper t) {
-		processes.add(t);
+		ProcessChild pc = new ProcessChild(t);
+		processes.add(pc);
+		try {
+			pc.start();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	/** printProcesses()
@@ -93,7 +96,7 @@ public class ProcessRunner {
 		}
 		
 		for (int i = 0; i < processes.size(); i++) {
-			MigratableProcessWrapper cur = processes.get(i);
+			MigratableProcessWrapper cur = processes.get(i).getMPW();
 			System.out.println(cur.getName());
 		}
 	}
@@ -103,14 +106,13 @@ public class ProcessRunner {
 	 * Returns a Thread to be migrated
 	 * @return the last Thread in the list being managed by the ProcessRunner
 	 */
-	@SuppressWarnings("deprecation")
 	public synchronized MigratableProcessWrapper getLast() {
 		if (processes.size() == 0) {
 			return null;
 		} 
 		
-		processes.get(processes.size() - 1).stop();
-		return processes.remove(processes.size() - 1);
+		processes.get(0).stop();
+		return processes.get(0).getMPW();
 	}
 	
 	public synchronized int getSize() {

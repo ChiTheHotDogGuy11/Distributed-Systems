@@ -13,7 +13,7 @@ public class ProcessManager {
 	
 	private boolean isMaster = true;
 	private boolean isRunning = true;
-	private Socket sck = null;
+	private SocketWrapper sck = null;
 	private ServerSocketWrapper server = null;
 	private ProcessRunner pr = null;
 	private LoadManager lm = null;
@@ -21,9 +21,9 @@ public class ProcessManager {
 	
 	public void migrate() throws IOException {
 		MigratableProcessWrapper processToMigrate = pr.getLast();
-        ObjectOutputStream out = new ObjectOutputStream(sck.getOutputStream());
-        out.writeObject(processToMigrate.getProcess());
-        out.close();
+		sck.getOut().writeObject(processToMigrate.getName());
+		sck.getOut().flush();
+        sck.getOut().writeObject(processToMigrate.getProcess());
 	}
 	
 	public MigratableProcessWrapper acceptProcess(String command, String[] args) {
@@ -66,7 +66,7 @@ public class ProcessManager {
 	public void receiveCommands() throws Exception {
 		String result = "";
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		server = new ServerSocketWrapper(2004, 10);
+		server = new ServerSocketWrapper(2014, 10);
 		server.start();
 		pr = new ProcessRunner();
 		pr.start();
@@ -126,7 +126,7 @@ public class ProcessManager {
 		int port = Integer.parseInt(hostArray[1]);
 		
 		try {
-			sck = new Socket(host, port);
+			sck = new SocketWrapper(new Socket(host, port));
 		} catch (UnknownHostException e) {
 			System.out.println("Unknown host. Could not connect to " + host + ".");
 			return;
