@@ -1,8 +1,12 @@
 import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.net.Socket;
 
+/** SlaveListener
+ * 
+ * Process run by a slave ProcessManager
+ * Listens to requests and objects sent by the master ProcessManager
+ * 
+ * @author Tyler Healy (thealy)
+ */
 public class SlaveListener {
 	
 	//Thread in which the process will be run
@@ -11,14 +15,32 @@ public class SlaveListener {
 	//boolean that determines whether the main thread should run
     private volatile boolean running;
     
+    /* SocketWrapper containing the socket connection between this
+     * slave ProcessManager and its master
+     */
     private SocketWrapper sck;
+    
+    // The ProcessManager for which this class is listening
     private ProcessManager pm;
     
+    /** SlaveListener(SocketWrapper sck, ProcessManager pm)
+     * 
+     * @param sck - SocketWrapper containing the socket connection bewteen
+     *              this slave ProcessManager and its master
+     * @param pm - The ProcessManager for which this class is listening
+     */
     public SlaveListener(SocketWrapper sck, ProcessManager pm) {
     	this.sck = sck;
     	this.pm = pm;
     }
     
+    /** start()
+     * 
+     * Starts the process of listening for and responding to requests
+     * from the master ProcessManager
+     * @throws Exception - thrown when start is attempted and the process is
+	 * 					   already running
+     */
     public synchronized void start() throws Exception {
 		if (thread != null) {
 			throw new Exception("Slave Listener already started.");
@@ -27,7 +49,8 @@ public class SlaveListener {
 		thread = new Thread(new Runnable() {
 			/** run()
 			 * 
-			 * Accepts connections and adds it to the managed list
+			 * Listens for requests from the ProcessManager
+			 * Interprets the requests and responds to them
 			 */
 			@Override
 			public void run() {
@@ -67,6 +90,10 @@ public class SlaveListener {
 		thread.start();
 	}
     
+    /** stop()
+     * 
+     * Stops the process of listening for requests
+     */
     public synchronized void stop() {
 		if (thread == null) {
 			return;

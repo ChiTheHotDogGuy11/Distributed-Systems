@@ -35,7 +35,7 @@ public class ProcessRunner {
 			/** run()
 			 * 
 			 * The run function of the runnable object within the thread
-			 * Runs the processes the ProcessManager is managing
+			 * Checks to see if any ProcessChildren have completed or terminated
 			 */
 			public void run() {
 				running = true;
@@ -72,6 +72,7 @@ public class ProcessRunner {
 	/** addThread(Thread t)
 	 * 
 	 * Adds a thread to the list being managed by the ProcessRunner
+	 * Starts the process
 	 * @param t - Thread to be added to the list
 	 */
 	public synchronized void addThread(MigratableProcessWrapper t) {
@@ -115,6 +116,10 @@ public class ProcessRunner {
 		return processes.get(0).getMPW();
 	}
 	
+	/** getSize()
+	 * 
+	 * @return The number of processes running under this ProcessRunner
+	 */
 	public synchronized int getSize() {
 		return processes.size();
 	}

@@ -24,7 +24,6 @@ public class TransactionalFileInputStream extends InputStream implements Seriali
 		this.src = src;
 	}
 	
-	@Override
 	/** read()
 	 * 
 	 * Extends the abstract method in InputStream
@@ -33,6 +32,7 @@ public class TransactionalFileInputStream extends InputStream implements Seriali
 	 * Closes the FileInputStream
 	 * Returns the result of the read (or returns -1 for end of file)
 	 */
+	@Override
 	public int read() {
 		
 		FileInputStream fis = null;
