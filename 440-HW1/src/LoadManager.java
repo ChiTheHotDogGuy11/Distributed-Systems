@@ -61,12 +61,12 @@ public class LoadManager {
 					int size;
 					
 					if (connections != null && (size = connections.size()) > 0) {
-						int[] numProcesses = new int[connections.size()];
+						int[] numProcesses = new int[size];
 						/* For each slave connected to the master, request the
 						 * number of processes running on that slave and look
 						 * for a response
 						 */
-						for (int i = 0; i < connections.size(); i++) {
+						for (int i = 0; i < size; i++) {
 							SocketWrapper cur = connections.get(i);
 							if (!cur.isClosed()) {
 								try {
