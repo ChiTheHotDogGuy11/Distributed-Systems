@@ -73,6 +73,7 @@ public class ProcessChild {
 		
 		mpw.stop();
 		isTerminated = true;
+		isComplete = false;
 		thread = null;
 	}
 	
