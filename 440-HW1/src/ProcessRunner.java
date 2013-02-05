@@ -46,7 +46,7 @@ public class ProcessRunner {
 							if (cur.isTerminated()) {
 								processes.remove(i);
 							} else if (cur.isComplete()) {
-								System.out.print(cur.getMPW().getName() + " has terminated\n==> ");
+								System.out.print("\n" + cur.getMPW().getName() + " has terminated\n==> ");
 								processes.remove(i);
 							}
 						}
