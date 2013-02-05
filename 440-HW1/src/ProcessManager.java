@@ -171,11 +171,7 @@ public class ProcessManager {
 		String[] hostArray = hostname.split(":");
 		
 		if (hostArray.length != 2) {
-			try {
-				throw new Exception("Invalide Hostname!");
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
+			System.out.println("Invalid Hostname!");
 		}
 		
 		String host = hostArray[0];
@@ -187,7 +183,6 @@ public class ProcessManager {
 			System.out.println("Unknown host. Could not connect to " + host + ".");
 			return;
 		} catch (IOException e) {
-			e.printStackTrace();
 			return;
 		}
 		
@@ -209,18 +204,6 @@ public class ProcessManager {
 	 * Quits the process manager
 	 */
 	public void quitPM() {
-		/*if (sck != null) {
-			try {
-				sck.close();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		}
-		isMaster = false;
-		isRunning = false;
-
-		server.stop();
-		pr.stop();*/
 		System.exit(1);
 	}
 	
