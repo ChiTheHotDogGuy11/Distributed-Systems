@@ -12,7 +12,7 @@ public class ShittyProcess implements MigratableProcess {
 		while (!suspending) { 
 			System.out.println(i);
 			Fib(i++);
-			if (i > 45) {
+			if (i > 50) {
 				break;
 			}
 		}

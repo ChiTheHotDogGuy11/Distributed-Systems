@@ -42,11 +42,13 @@ public class ProcessRunner {
 				while(running) {
 					for (int i = 0; i < processes.size(); i++) {
 						ProcessChild cur = processes.get(i);
-						if (cur.isComplete()) {
-							System.out.println(cur.getMPW().getName() + " has terminated");
-							processes.remove(i);
-						} else if (cur.isTerminated()) {
-							processes.remove(i);
+						if (cur !=null) {
+							if (cur.isTerminated()) {
+								processes.remove(i);
+							} else if (cur.isComplete()) {
+								System.out.println(cur.getMPW().getName() + " has terminated");
+								processes.remove(i);
+							}
 						}
 					}
 				}
@@ -113,8 +115,9 @@ public class ProcessRunner {
 			return null;
 		} 
 		
-		processes.get(size - 1).stop();
-		return processes.get(size - 1).getMPW();
+		ProcessChild pc = processes.get(size - 1);
+		pc.stop();
+		return pc.getMPW();
 	}
 	
 	/** getSize()
