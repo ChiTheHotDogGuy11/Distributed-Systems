@@ -2,6 +2,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.zip.ZipEntry;
+import java.util.zip.ZipException;
 import java.util.zip.ZipOutputStream;
 
 /** Zip
@@ -117,7 +118,7 @@ public class Zip implements MigratableProcess {
 	    		curInput.close();
 	    		zipOutput.closeEntry();
 			} catch (IOException e) {
-				e.printStackTrace();
+				System.out.println("The zip must have at least one valid file to compress.");
 			}
 			filesIndex += 1;	
 		}
