@@ -96,7 +96,7 @@ public class ProcessManager {
 	public void receiveCommands() throws Exception {
 		String result = "";
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		server = new ServerSocketWrapper(2014, 10);
+		server = new ServerSocketWrapper(2015, 10);
 		server.start();
 		pr = new ProcessRunner();
 		pr.start();

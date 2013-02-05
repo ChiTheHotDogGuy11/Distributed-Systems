@@ -16,8 +16,6 @@ public class Zip implements MigratableProcess {
 	private boolean validArgs;
 	// The file to write to.
 	private TransactionalFileOutputStream outFile;
-	//The target zip stream
-	private ZipOutputStream zipOutput;
 	//The files to write
 	private String[] filesToWrite;
 	//The index into the filesToWrite array
@@ -56,7 +54,6 @@ public class Zip implements MigratableProcess {
 		String targetFilename = args[0];
 		if (!targetFilename.endsWith(".zip")) throw new IllegalArgumentException("The target filename must end in .zip");
 		outFile = new TransactionalFileOutputStream(targetFilename, false);
-		zipOutput = new ZipOutputStream(outFile);
 		//Store all of the given files in an array.
 		filesToWrite = new String[args.length - 1];
 		for (int i = 1; i < args.length; i++) {
@@ -93,8 +90,15 @@ public class Zip implements MigratableProcess {
 		String curFilename;
 		ZipEntry curEntry;
 		FileInputStream curInput;
+		ZipOutputStream zipOutput = new ZipOutputStream(outFile);
 		
 		while (filesIndex < filesToWrite.length && !suspending) {
+			try {
+				Thread.sleep(10000);
+			} catch (InterruptedException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
 			curFilename = filesToWrite[filesIndex];
 			curFile = new File(curFilename);
 			//If the current file doesn't exist, simply let the user know and continue.

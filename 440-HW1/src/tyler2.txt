@@ -15,4 +15,11 @@ LINKS FROM http://www.google.com/imghp?hl=en&tab=wi
        OUTGOING LINK: http://www.google.com/webhp?hl=en&tab=iw
        OUTGOING LINK: http://maps.google.com/maps?hl=en&tab=il
        OUTGOING LINK: https://play.google.com/?hl=en&tab=i8
-       OUTGOING
+       OUTGOING LINK: http://www.youtube.com/?hl=en&tab=i1
+       OUTGOING LINK: http://news.google.com/nwshp?hl=en&tab=in
+       OUTGOING LINK: https://mail.google.com/mail/?tab=im
+       OUTGOING LINK: https://drive.google.com/?tab=io
+       OUTGOING LINK: http://www.google.com/intl/en/options/
+       OUTGOING LINK: http://www.google.com/history/optout?hl=en
+       OUTGOING LINK: https://accounts.google.com/ServiceLogin?hl=en&continue=http://www.google.com/imghp%3Fhl%3Den%26tab%3Dwi
+       OUTGOING LINK

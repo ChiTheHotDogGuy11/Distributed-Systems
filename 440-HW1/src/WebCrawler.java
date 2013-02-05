@@ -25,7 +25,7 @@ public class WebCrawler implements MigratableProcess {
 	// The file to write to.
 	private TransactionalFileOutputStream outFile;
 	// If the arguments are invalid, don't run.
-	private boolean validArgs;
+	private volatile boolean validArgs;
 	
 	private volatile boolean suspending;
 	
@@ -148,7 +148,6 @@ public class WebCrawler implements MigratableProcess {
 	 */
 	public void suspend()
 	{
-		System.out.println("SUSPEND");
 		suspending = true;
 		while (suspending);
 	}
