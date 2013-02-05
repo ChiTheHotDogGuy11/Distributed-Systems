@@ -5,7 +5,6 @@ JC = javac
 		$(JC) $(JFLAGS) $*.java
 
 CLASSES = \
-        GrepProcess.java \
         LoadManager.java \
         Main.java \
         MigratableProcess.java \
@@ -15,7 +14,6 @@ CLASSES = \
         ProcessRunner.java \
         Queue.java \
         ServerSocketWrapper.java \
-        ShittyProcess.java \
         SlaveListener.java \
         SocketWrapper.java \
         TransactionalFileInputStream.java \
