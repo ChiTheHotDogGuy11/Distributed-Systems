@@ -12,7 +12,7 @@ import java.util.zip.ZipOutputStream;
  *
  */
 public class Zip implements MigratableProcess {
-	// If the arguments are invalid, don't run.
+	//If the arguments are invalid, don't run.
 	private boolean validArgs;
 	// The file to write to.
 	private TransactionalFileOutputStream outFile;
