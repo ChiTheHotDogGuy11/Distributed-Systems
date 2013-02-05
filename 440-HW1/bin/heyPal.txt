@@ -33,17 +33,10 @@ LINKS FROM http://maps.google.com/maps?hl=en&tab=wl
        OUTGOING LINK: https://mail.google.com/mail/?tab=lm
        OUTGOING LINK: https://drive.google.com/?tab=lo
        OUTGOING LINK: http://www.google.com/intl/en/options/
-<<<<<<< HEAD
        OUTGOING LINK: http://maps.google.com/maps?hl=en&mid=1360024613&showlabs=1
        OUTGOING LINK: http://www.google.com/history/optout?hl=en
        OUTGOING LINK: http://maps.google.com/support?hl=en
        OUTGOING LINK: https://accounts.google.com/ServiceLogin?hl=en&continue=http://maps.google.com/maps%3Fhl%3Den%26mid%3D1360024613&service=local
-=======
-       OUTGOING LINK: http://maps.google.com/maps?hl=en&mid=1360022782&showlabs=1
-       OUTGOING LINK: http://www.google.com/history/optout?hl=en
-       OUTGOING LINK: http://maps.google.com/support?hl=en
-       OUTGOING LINK: https://accounts.google.com/ServiceLogin?hl=en&continue=http://maps.google.com/maps%3Fhl%3Den%26mid%3D1360022782&service=local
->>>>>>> Fixing files
        OUTGOING LINK: http://maps.google.com/support/bin/topic.py?topic=10781&amp;hl=en
        OUTGOING LINK: http://www.google.com/local/add?hl=en&gl=us
        OUTGOING LINK: http://maps.google.com/support?hl=en
@@ -67,14 +60,6 @@ LINKS FROM https://play.google.com/?hl=en&tab=w8
        OUTGOING LINK: http://developer.android.com/index.html
        OUTGOING LINK: https://play.google.com/artists
 LINKS FROM http://www.youtube.com/?tab=w1
-<<<<<<< HEAD
        OUTGOING LINK: https://accounts.google.com/ServiceLogin?continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26hl%3Den_US%26next%3D%252F%253Ffeature%253Dsignin%26nomobiletemp%3D1&amp;passive=true&amp;service=youtube&amp;uilel=3&amp;hl=en_US
        OUTGOING LINK: http://www.google.com/intl/en/policies/privacy/
        OUTGOING LINK: https://accounts.google.com/ServiceLogin?continue=http%3A%2F%2Fwww.youtube.com%2F
-=======
-       OUTGOING LINK: https://accounts.google.com/ServiceLogin?uilel=3&amp;hl=en_US&amp;service=youtube&amp;passive=true&amp;continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26hl%3Den_US%26next%3D%252F%253Ffeature%253Dsignin%26nomobiletemp%3D1
-       OUTGOING LINK: http://www.google.com/intl/en/policies/privacy/
-       OUTGOING LINK: https://accounts.google.com/ServiceLogin?uilel=3&hl=en_US&service=youtube&passive=true&continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26feature%3Dplaylist%26hl%3Den_US%26next%3D%252F%253Ftab%253Dw1%26nomobiletemp%3D1
-       OUTGOING LINK: https://accounts.google.com/ServiceLogin?uilel=3&hl=en_US&service=youtube&passive=true&continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26feature%3Dplaylist%26hl%3Den_US%26next%3D%252F%253Ftab%253Dw1%26nomobiletemp%3D1
-LINKS FROM http://news.google.com/nwshp?hl=en&tab=wn
->>>>>>> Fixing files
