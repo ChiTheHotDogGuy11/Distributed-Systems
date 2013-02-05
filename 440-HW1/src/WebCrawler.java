@@ -136,7 +136,6 @@ public class WebCrawler implements MigratableProcess {
 		        incomingHTML.close();
 			} catch (IOException e) {
 				outStream.println("ERROR: Bad URL on queue.");
-				e.printStackTrace();
 			}
 		}
 		suspending = false;
