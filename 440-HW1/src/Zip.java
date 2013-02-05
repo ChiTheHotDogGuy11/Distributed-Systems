@@ -93,12 +93,6 @@ public class Zip implements MigratableProcess {
 		ZipOutputStream zipOutput = new ZipOutputStream(outFile);
 		
 		while (filesIndex < filesToWrite.length && !suspending) {
-			try {
-				Thread.sleep(10000);
-			} catch (InterruptedException e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
-			}
 			curFilename = filesToWrite[filesIndex];
 			curFile = new File(curFilename);
 			//If the current file doesn't exist, simply let the user know and continue.
