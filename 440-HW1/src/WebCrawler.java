@@ -148,6 +148,7 @@ public class WebCrawler implements MigratableProcess {
 	 */
 	public void suspend()
 	{
+		System.out.println("SUSPEND");
 		suspending = true;
 		while (suspending);
 	}

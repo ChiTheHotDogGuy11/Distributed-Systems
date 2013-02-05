@@ -1,4 +1,6 @@
-public class Queue <F> {
+import java.io.Serializable;
+
+public class Queue <F> implements Serializable{
 	private Node<F> first, last;
 	private int numElems;
 	
@@ -9,7 +11,7 @@ public class Queue <F> {
 		numElems = 1;
 	}
 	
-	private class Node <E>{
+	private class Node <E> implements Serializable{
 		public E value;
 		public Node<E> next;
 		

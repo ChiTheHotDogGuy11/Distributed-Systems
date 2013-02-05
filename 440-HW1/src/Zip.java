@@ -131,6 +131,7 @@ public class Zip implements MigratableProcess {
 				e.printStackTrace();
 			}
 		}
+		suspending = false;
 	}
 	
 	/** suspend()

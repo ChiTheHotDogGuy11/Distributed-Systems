@@ -1,0 +1,9 @@
+LINKS FROM http://www.reddit.com
+       OUTGOING LINK: http://www.reddit.com/r/AdviceAnimals/
+       OUTGOING LINK: http://www.reddit.com/r/announcements/
+       OUTGOING LINK: http://www.reddit.com/r/AskReddit/
+       OUTGOING LINK: http://www.reddit.com/r/atheism/
+       OUTGOING LINK: http://www.reddit.com/r/aww/
+       OUTGOING LINK: http://www.reddit.com/r/bestof/
+       OUTGOING LINK: http://www.reddit.com/r/blog/
+       OUTGOING LINK: http://www.reddit.com/
