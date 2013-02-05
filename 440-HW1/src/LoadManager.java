@@ -78,9 +78,7 @@ public class LoadManager {
 										e.printStackTrace();
 									}
 									numProcesses[i] = (Integer) response;
-								} catch (IOException e) {
-									e.printStackTrace();
-								}
+								} catch (IOException e) { }
 							}
 						}
 						
@@ -113,7 +111,6 @@ public class LoadManager {
 										//The process object
 										obj = cur.getIn().readObject();
 									} catch (IOException e) {
-										e.printStackTrace();
 									} catch (ClassNotFoundException e) {
 										e.printStackTrace();
 									}
@@ -148,7 +145,6 @@ public class LoadManager {
 								try {
 									cur.getOut().writeObject(migrations.get(i));
 								} catch (IOException e) {
-									e.printStackTrace();
 								}
 							}
 						}
